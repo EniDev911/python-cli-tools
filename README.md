@@ -37,7 +37,7 @@ Donde:
 Ejemplo: 
 
 <p align = 'center'>
-  <img src = 'img/01_mysqldump_export.png' width = 900 height = 200/>
+  <img src = 'img/01_mysqldump_export.png' width = 900 height = 170/>
 </p>
 
 Generando un archivo similar a este según sus bases de datos que quieran exportar: 
