@@ -29,7 +29,7 @@ Elegimos el siguiente tema.
     <img src="img/03_Solarized Space Predawn.sublime-theme.png" alt='change theme' width='770' height='480'>
 </p>
 
-Para poder modificar la apariencia debemos crear un nuevo archivo en nuestro directorio de configuraciones de usuaerio una forma fácil de poder abrirlo es:  
+Para poder modificar la apariencia debemos crear un nuevo archivo en nuestro directorio de configuraciones de usuario una forma fácil de poder abrirlo es:  
 Vamos a **Preferences** ->**Browse Packages...** 
 
 Se le abrira una modal de navegación justamente en donde se encuentra nuestra carpeta de usuario, entramos en ella y copiamos la dirección en la barra de navegación:
