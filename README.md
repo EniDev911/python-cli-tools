@@ -34,6 +34,12 @@
   <a href="./SublimeText_Theme">Instalar y modificar un tema</a>
 </p>
 
+### *Cómo crear Snippet en ST3*
+
+<p style="font-size:12px;">
+  <a href="./Snippet_SublimeText">Crear Snippet</a>
+</p>
+
 ---  
 
 
