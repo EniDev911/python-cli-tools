@@ -66,3 +66,18 @@ Personalmente, el esquema de colores que este paquete incorpora por defecto no e
 |**CTRL+1**|Agrega almohadilla para escribir un título (puedes ir desde el 1 al 6)|
 |**CTRL+B**|Te compila el archivo de markdown a html(debes tener el build en automatic)|
 |**CTRL+D**|Selecciona la palabra en el cursor, luego presiona el asterísco(\*) se convierte en italic si le das dos veces se convierte en bold|
+--- 
+
+## Cómo configurar SublimeText para visualizar nuestros archivos de Markdown  
+### *MarkdownPreview*  
+
+Ya tenemos instalada la extensión que nos provee la edición de archivos Markdown en SublimeText, esta extensión no tiene alguna forma de ver nuestro archivo específico de Markdown en el navegador, para ello debemos de instalar otro complemento que es fundamental para la previsualización en el navegador este complemento lo buscamos con el nombre de **MarkdownPreview**, este complemento nos ayuda a obtener una vista previa en el navegador de nuestros archivos markdown
+  
+1. Abrimos package control (CTRL+SHIFT+P)
+2. Escribimos install y seleccionamos (Install Package)
+3. Escribir el nombre del package (**MarkdownPreview**)  
+4. Reinicia SublimeText 
+
+<p align="center">
+  <img src="img/install_mdp.png" alt="MarkdownPreview install"/>
+</p>
