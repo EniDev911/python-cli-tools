@@ -27,7 +27,7 @@ Esto se debe que cuando descargas el la extensión te cargará automaticamente e
   [
   // borramos Markdown de esta lista 
     "Markdown",
-    "Vintage"
+    "Vintage",
   ],
  }
 ```
