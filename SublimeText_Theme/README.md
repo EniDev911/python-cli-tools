@@ -171,5 +171,10 @@ Y pegamos lo siguiente en el apartado de las configuraciones del usuario:
 </p>
 
 Reiniciamos el editor y veremos que ya nuestra fuente así como nuestra barra laterar al aumentado su escala.
+Por último instalamos la extensión para tener los iconos  
 
+1. Abrimos package control (CTRL+SHIFT+P)
+2. Escribimos install y seleccionamos (Install Package)
+3. Escribir el nombre del package (**A File Icon**)  
+4. Instalar
 
