@@ -17,7 +17,7 @@ Para agregar estas características debemos instalar algunos complementos y conf
   <img src="img/ErrorLoading.png" alt="Error Loading"/>
 </p>
 
-Esto se debe que cuando descargas el la extensión te cargará automaticamente el README.MD del mismo, por lo que de manera inmediata te arrojará este error, por otro lado, para poder evitar este mensaje de error, para evitar es muy sencillo solo debemos abrir **Preferencias**> **Configuraciones**, y quitamos Markdown de la lista en **"ignored_packages"** en las Preferencias del usuario:
+Esto se debe que cuando descargas el la extensión te cargará automaticamente el README.MD del mismo, por lo que de manera inmediata te arrojará este error, por otro lado, para poder evitar este mensaje de error, para evitar es muy sencillo, vamos a buscar en la barra del menú debemos abrir **Preferences**> **Settings**, y quitamos Markdown de la lista en **"ignored_packages"** en las Preferencias del usuario:
 
 ```JSON
 // Preferences.sublime-settings -- User
@@ -40,6 +40,7 @@ Despues de reiniciar ST3, todas las funciones del paquete **MarkdownEditing** se
 
 La extensión instala un atractivo tema gris sobre gris para los archivos Markdown en el editor, Más importante aún, proporciona *formato en línea de Markdown*. Eso significa negritas editor de título, cursivas para palabras envueltas en los simbolos \*\* Las seleccciones marcadas para las citas de bloque y el código fuente también se sombrearán de manera diferente. También se manejará inteligentemente listas de viñetas y listas numeradas, lo que puede ahorrarle mucho tiempo al escribir. Además de eso, ST también incluirá comillas dobles, paréntesis, guiones bajos y astericos(\*) para asegurarse de cerrarlos mientras escribe.  
 
+Personalmente, el esquema de colores que este paquete incorpora por defecto no es malo. Sin embargo, podemos cambiarlo seleccionando otro tema desde el  menú **Preferences**> **Packages Settings**>**Markdown Editing**>**Change color scheme...**
 
 ## Atajos que se habilitan junto a MarkdownEditing  
 
