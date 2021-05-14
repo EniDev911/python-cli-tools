@@ -29,7 +29,6 @@ Esto se debe que cuando descargas el la extensión te cargará automaticamente e
     "Markdown",
     "Vintage"
   ],
-	"theme": "Gravity One.sublime-theme",
  }
 ```
 
