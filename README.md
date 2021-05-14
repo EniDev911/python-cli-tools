@@ -6,7 +6,6 @@
 1. [Objetivo y descripción](#intro)
 1. [Dependencias](#dependencies)
 1. [Puesta en marcha](#run)
-1. [Referencias](#reference)
 
 ## <a name='intro'>Objetivo y Descripción</a>
 
@@ -157,11 +156,7 @@ PROMPT:
   <img src = 'img/04_mysql_showimport.png' width = 800 height = 770/>
 </p>
 
+<p align = 'center'>
+  <img src = 'img/05_mysql_showimport.png' width = 800 height = 770/>
+</p>
 
-
-## <a name='reference'>Referencias</a>
-
-- **Referencia 1:**
-	+ [Linux Party](http://www.linux-party.com/index.php/89-basesdedatos/8347-exportar-e-importar-una-base-de-datos-mysql-desde-la-consola-shell-de-linux#)
-- **Referencia 2:**
-	+ Linea de Comandos
