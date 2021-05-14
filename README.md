@@ -110,7 +110,7 @@ $ mysql -u usuario_mysql -p base_de_datos < archivo.sql
 ```
 Ejemplo: 
 
-Suponiendo que tengamos el siguiente script llamado base_datos.sql
+Suponiendo que tengamos el siguiente script llamado **base_datos.sql** y previamente tengamos creada una base de datos llamada **importdb**
 ```sql
 CREATE TABLE IF NOT EXISTS contactos (
     id int(11) NOT NULL AUTO_INCREMENT,
