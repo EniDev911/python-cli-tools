@@ -14,6 +14,7 @@ Para agregar estas características debemos instalar algunos complementos y conf
 Reinicia SublimeText                                                                                                                                                                  
 **Nota**: Si esta utilizando ST2 posiblemente al instalarlo te encuentres con una ventana emergente como esta o tambien en ST3.  
 
+
 <p align="center">
   <img src="img/ErrorLoading.png" alt="Error Loading"/>
 </p>
