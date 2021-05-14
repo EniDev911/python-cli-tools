@@ -30,6 +30,10 @@
 
 ### *Cómo configurar ST3 para mejorar el aspecto visual*
 
+<p style="font-size:12px;">
+  <a href="./SublimeText_Theme">Instalar y modificar un tema</a>
+</p>
+
 ---  
 
 
