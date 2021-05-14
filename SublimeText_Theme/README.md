@@ -169,3 +169,7 @@ Y pegamos lo siguiente en el apartado de las configuraciones del usuario:
 <p align="center">
     <img src="img/10_Modify_settings.png" alt='Modify settings'>
 </p>
+
+Reiniciamos el editor y veremos que ya nuestra fuente así como nuestra barra laterar al aumentado su escala.
+
+
