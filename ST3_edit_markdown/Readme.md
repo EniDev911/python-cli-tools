@@ -9,7 +9,7 @@ Para agregar estas características debemos instalar algunos complementos y conf
 <p align="center">
   <img src="img/install_mde.png" alt="Install Markdown Editing"/>
 </p>
-5. Reinicie ST3 
+4. Reinicie ST3 
 
 Si esta utilizando ST2 posiblemente al instalarlo te encuentres con una ventana emergente como esta o tasmbién en ST3.  
 
