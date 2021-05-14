@@ -45,7 +45,7 @@ Personalmente, el esquema de colores que este paquete incorpora por defecto no e
 **Capturas** 
 <p align="center">
   <img src="img/mde_arcdark.png" alt="ArcDark" width="500" height="450"/>
-  &nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;
   <img src="img/mde_dark.png" alt="Dark" width="550" height="450"/>
 </p>
 
