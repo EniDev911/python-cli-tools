@@ -125,7 +125,7 @@ prompt:
   <img src = 'img/02_mysql_import.png' width = 900 height = 170/>
 </p>
 
-Obtendriamos lo siguiente al revisar;
+Obtendriamos lo siguiente al revisar:
 
 <p align = 'center'>
   <img src = 'img/03_mysql_showimport.png' width = 800 height = 770/>
