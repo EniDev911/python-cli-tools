@@ -139,7 +139,7 @@ Y dentro del archivo pegamos el siguiente código
 
 ```
 
-Salvamos los cambios con **Ctrl + S **
+Salvamos los cambios con **Ctrl + S**
 
 Deberiamos obtener el siguiente resultado: 
 
