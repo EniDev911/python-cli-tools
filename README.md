@@ -33,6 +33,8 @@ Donde:
   * -p es para que nos pregunte el password.
   * base_de_datos es el nombre de la BBDD a exportar.
   * archivo.sql es el fichero resultante de la exportación, > es para volcar el contenido al archivo con la extensión sql
+  
+2. Una vez que la ejecución del comando termine, se creará el archivo **archivo.sql** con los querys que crean las tablas e información que pudiera contener nuestra base de datos. 
 
 Ejemplo: 
 
@@ -85,8 +87,6 @@ CREATE TABLE `tareas` (
 
 -- Dump completed on 2021-05-13 19:54:42
 ```
-
-2. Una vez que la ejecución del comando termine, se creará el archivo **archivo.sql** con los querys que crean las tablas e información que pudiera contener nuestra base.
 
 Adicional a esto, podemos ejecutar el mismo comando con las siguientes variaciones:
 ```
