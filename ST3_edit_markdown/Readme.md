@@ -8,7 +8,7 @@ Para agregar estas características debemos instalar algunos complementos y conf
 3. Escribir el nombre del package (**MarkdownEditing**)  
 4. Reinicia SublimeText
 <p align="center">
-  <img src="img/install_mde.png" alt="Install Markdown Editing" width="500" height="180 />
+  <img src="img/install_mde.png" alt="Install Markdown Editing" width="550" height="180 />
 </p>
                                                                                     
 <p align="center">
