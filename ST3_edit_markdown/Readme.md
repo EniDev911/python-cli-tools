@@ -42,6 +42,19 @@ La extensión instala un atractivo tema gris sobre gris para los archivos Markdo
 
 Personalmente, el esquema de colores que este paquete incorpora por defecto no es malo. Sin embargo, podemos cambiarlo seleccionando otro tema desde el  menú **Preferences**> **Packages Settings**>**Markdown Editing**>**Change color scheme...**
 
+**Capturas** 
+<p align="center">
+  <img src="img/mde_arcdark.png" alt="ArcDark" width="400" height="500"/>
+  &nbsp;&nbsp;&nbsp;
+  <img src="img/mde_dark.png" alt="Dark" width="400" height="500"/>
+</p>
+
+<p align="center">
+  <img src="img/mde_focus.png" alt="Focus" width="400" height="500"/>
+  &nbsp;&nbsp;&nbsp;
+  <img src="img/mde_yellow.png" alt="Yellow" width="400" height="500"/>
+</p>
+
 ## Atajos que se habilitan junto a MarkdownEditing  
 
 |Combinación|Descripción|
