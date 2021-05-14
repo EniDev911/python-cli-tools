@@ -11,7 +11,8 @@ Para agregar estas características debemos instalar algunos complementos y conf
 </p>
 4. Reinicie SublimeText  
 
-
+  
+  
 Nota: Si esta utilizando ST2 posiblemente al instalarlo te encuentres con una ventana emergente como esta o tambien en ST3.  
 
 <p align="center">
