@@ -88,3 +88,4 @@ Vamos a **Preferences** ->**Key Bindings - User** y añadimos entre los corchete
 ```json
 { "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"} }
 ```
+Salvamos cambios con **Ctrl + S**
