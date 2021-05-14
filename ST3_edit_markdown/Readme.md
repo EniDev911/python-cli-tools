@@ -25,7 +25,7 @@ Esto se debe que cuando descargas el la extensión te cargará automaticamente e
 
 "ignored_packages":
   [
-  /* borramos Markdown de esta lista */
+  // borramos Markdown de esta lista 
     "Markdown",
     "Vintage"
   ],
