@@ -10,3 +10,8 @@
 <p style="font-size:12px;">
   <a href="./Export_import_MySql">MySql Export e Import</a>
 </p>
+
+### *Scripts Mysql.*
+<p style="font-size:12px;">
+  <a href="./Scripts_MySql">Scripts Mysql</a>
+</p>
