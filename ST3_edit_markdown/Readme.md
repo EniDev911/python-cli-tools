@@ -81,3 +81,10 @@ Ya tenemos instalada la extensión que nos provee la edición de archivos Markdo
 <p align="center">
   <img src="img/install_mdp.png" alt="MarkdownPreview install"/>
 </p>
+
+Para aprovechar su capacidad podemos configurar un atajo de teclado de la siguiente manera:
+
+Vamos a **Preferences** ->**Key Bindings - User** y añadimos entre los corchetes lo siguiente.
+```json
+{ "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"} }
+```
