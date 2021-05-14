@@ -44,15 +44,15 @@ Personalmente, el esquema de colores que este paquete incorpora por defecto no e
 
 **Capturas** 
 <p align="center">
-  <img src="img/mde_arcdark.png" alt="ArcDark" width="450" height="450"/>
+  <img src="img/mde_arcdark.png" alt="ArcDark" width="550" height="450"/>
   &nbsp;&nbsp;&nbsp;
-  <img src="img/mde_dark.png" alt="Dark" width="450" height="450"/>
+  <img src="img/mde_dark.png" alt="Dark" width="550" height="450"/>
 </p>
 
 <p align="center">
-  <img src="img/mde_focus.png" alt="Focus" width="450" height="450"/>
+  <img src="img/mde_focus.png" alt="Focus" width="550" height="450"/>
   &nbsp;&nbsp;&nbsp;
-  <img src="img/mde_yellow.png" alt="Yellow" width="450" height="450"/>
+  <img src="img/mde_yellow.png" alt="Yellow" width="550" height="450"/>
 </p>
 
 ## Atajos que se habilitan junto a MarkdownEditing  
