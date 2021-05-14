@@ -26,3 +26,11 @@
 <p style="font-size:12px;">
   <a href="./ST3_edit_markdown">ST3 para editar Markdown</a>
 </p>
+
+
+### *Cómo configurar ST3 para mejorar el aspecto visual*
+
+---  
+
+
+## Python  
