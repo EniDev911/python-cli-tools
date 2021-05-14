@@ -37,7 +37,7 @@ Donde:
 Ejemplo: 
 
 <p align = 'center'>
-  <img src = 'img/01_mysqldump_export.png' width = 800 height = 200/>
+  <img src = 'img/01_mysqldump_export.png' width = 900 height = 200/>
 </p>
 
 2. Una vez que la ejecución del comando termine, se creará el archivo **archivo.sql** con los querys que crean las tablas e información que pudiera contener nuestra base.
