@@ -6,7 +6,10 @@ Para agregar estas características debemos instalar algunos complementos y conf
 1. Abrimos package control (CTRL+SHIFT+P)
 2. Escribimos install y seleccionamos (Install Package)
 3. Escribir el nombre del package (**MarkdownEditing**)
-4. Reinicie ST3 
+<p align="center">
+  <img src="img/install_mde.png" alt="Install Markdown Editing"/>
+</p>
+5. Reinicie ST3 
 
 Si esta utilizando ST2 posiblemente al instalarlo te encuentres con una ventana emergente como esta o tasmbién en ST3.  
 
