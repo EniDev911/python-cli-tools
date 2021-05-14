@@ -108,6 +108,23 @@ El más sencillo y directo consiste en ejecutar el siguiente comando en la termi
 ```
 $ mysql -u usuario_mysql -p base_de_datos < archivo.sql
 ```
+Ejemplo: 
+
+Suponiendo que tengamos el siguiente script llamado base_datos.sql
+```sql
+CREATE TABLE IF NOT EXISTS contactos (
+    id int(11) NOT NULL AUTO_INCREMENT,
+    nombre varchar(50),
+    apellido varchar(50),
+    PRIMARY KEY (id)
+);
+```
+prompt: 
+
+<p align = 'center'>
+  <img src = 'img/02_mysql_import.png' width = 900 height = 170/>
+</p>
+
 
 O bien podemos seguir estos pasos:
 
