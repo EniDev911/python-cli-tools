@@ -127,7 +127,7 @@ CMD:
 Obtendriamos lo siguiente al revisar:
 
 <p align = 'center'>
-  <img src = 'img/03_mysql_showimport.png' width = 800 height = 770/>
+  <img src = 'img/03_mysql_showimport.png' width = 750 height = 600/>
 </p>
 
 
