@@ -10,8 +10,11 @@ Para agregar estas características debemos instalar algunos complementos y conf
 <p align="center">
   <img src="img/install_mde.png" alt="Install Markdown Editing" width="500" height="180 />
 </p>
-
-**Nota**: Si esta utilizando ST2 posiblemente al instalarlo te encuentres con una ventana emergente como esta o tambien en ST3.  
+                                                                                    
+<p align="center">
+  <strong>Nota:</strong> Si esta utilizando ST2 posiblemente al instalarlo te encuentres con una ventana emergente como esta o tambien en ST3. 
+</p>
+ 
 
 <p align="center">
   <img src="img/ErrorLoading.png" alt="Error Loading"/>
