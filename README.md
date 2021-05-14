@@ -19,7 +19,7 @@
 --- 
 
 
-### Sublimetext 3
+## Sublimetext 3
 
 ### *Cómo configurar ST3 para la edición de Markdown*
 
