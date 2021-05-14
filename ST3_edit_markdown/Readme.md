@@ -4,9 +4,9 @@ Recien instalado, Sublime Text no ofrece ningún soporte específico de Markdown
 Para agregar estas características debemos instalar algunos complementos y configurar algunas preferencias.  
 
 1. Abrimos package control (CTRL+SHIFT+P)
-2. Escribimos install y seleccionamos (Install Package)
-3. Escribir el nombre del package (**MarkdownEditing**)
-4. Reinicie ST3 
+1. Escribimos install y seleccionamos (Install Package)
+1. Escribir el nombre del package (**MarkdownEditing**)
+1. Reinicie ST3 
 
 Si esta utilizando ST2 posiblemente al instalarlo te encuentres con una ventana emergente como esta o tasmbién en ST3.  
 
