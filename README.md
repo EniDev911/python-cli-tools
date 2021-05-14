@@ -153,10 +153,10 @@ mysql> source /home/usuario/archivo.sql
 PROMPT:
 
 <p align = 'center'>
-  <img src = 'img/04_mysql_showimport.png' width = 750 height = 740/>
+  <img src = 'img/04_mysql_showimport.png' width = 750 height = 690/>
 </p>
 
 <p align = 'center'>
-  <img src = 'img/05_mysql_showimport.png' width = 750 height = 740/>
+  <img src = 'img/05_mysql_showimport.png' width = 750 height = 690/>
 </p>
 
