@@ -119,7 +119,7 @@ CREATE TABLE IF NOT EXISTS contactos (
     PRIMARY KEY (id)
 );
 ```
-prompt: 
+CMD: 
 
 <p align = 'center'>
   <img src = 'img/02_mysql_import.png' width = 900 height = 170/>
@@ -151,6 +151,11 @@ mysql> use base_datos;
 mysql> source /home/usuario/archivo.sql
 ```
 
+PROMPT:
+
+<p align = 'center'>
+  <img src = 'img/04_mysql_showimport.png' width = 800 height = 770/>
+</p>
 
 
 
