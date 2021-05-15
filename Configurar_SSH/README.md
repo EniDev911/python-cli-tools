@@ -117,5 +117,21 @@ Copia tu clave en el campo "Key" (Clave).
     <img src="img_ssh/10_corfim.png" alt="corfim" width="450" height="500">
 </p>
 
+Ya se esta lista nuestra llave para poder utilizarla con GitHub.
+
+## Probar la conexión SSH a GitHub
+
+Ahora podemos probar nuestra conexión a través de SSH a GitHub  
+
+```bash
+ssh -T git@github.com
+```
+<p align="center">
+    <img src="img_ssh/11_validate.png" alt="validate" width="850" height="550">
+</p>
+
+Si la última línea contiene su nombre de usuario en GitHub, ¡está autenticado correctamente!.
+
+
 
 
