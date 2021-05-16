@@ -56,5 +56,15 @@
 
 <p style="font-size:12px;">
   <a href="./RMarkdown">RMarkdown</a>
+</p>  
+
+
+
+## Python
+
+- *Módulos Estándar*
+
+<p style="font-size:12px;">
+  <a href="./Python/os">Módulos estándar</a>
 </p>
 
