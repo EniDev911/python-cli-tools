@@ -12,8 +12,7 @@ ejemplo:
 >>>import os
 >>>os.name
 'nt'
-```
----
+``` 
 
 ejemplo para limpiar consola chequeando el valor **os.name**:  
 
@@ -45,7 +44,6 @@ Aquí un ejemplo:
 >>>os.getenv('TMP')
 'C:\\Users\\user\\AppData\\Local\\temp'
 ```
----  
 
 El beneficio de usar **os.getenv()** en lugar del diccionario **os.environ**  
 es que si intenta acceder a una variable de entorno que no existe.  
@@ -65,7 +63,6 @@ La función **os.chdir** nos permite cambiar de directorio en el que estamos eje
 >>>os.getcwd()
 'C:\\Users\\user\\Documents'
 ```
----
 
 Python contempla los **raw string**, en los que los caracteres se ponen tal cual y no se interpreta ninguno, por lo que no hace falta "escapar" ninguno en la siguiente línea:  
 
