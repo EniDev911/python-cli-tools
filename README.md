@@ -50,4 +50,11 @@
   <a href="./Configurar_SSH">Configurar SSH</a>
 </p>
 
-## Python  
+## R
+
+- *Comenzar con RMarkdown*
+
+<p style="font-size:12px;">
+  <a href="./RMarkdown">RMarkdown</a>
+</p>
+
