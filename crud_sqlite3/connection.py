@@ -1,4 +1,5 @@
 import sqlite3 
+import os
 
 DB = 'database.db'
 
@@ -17,6 +18,7 @@ class Database:
 				print(e)
 
 	def createDB(self):
+
 		self.run_query('''
 			CREATE TABLE IF NOT EXISTS contacts(
             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -30,11 +32,9 @@ class Database:
 
 
 	def dropDB(self):
-		self.run_query('''
-			DROP TABLE contacts;
-			''')
-
-		print('DATABASE DROP SUCCESFULLY')
+		if DB in os.listdir('.'):
+			os.remove(DB)
+			 print('DATABASE DROP SUCCESFULLY')
 
 
 
