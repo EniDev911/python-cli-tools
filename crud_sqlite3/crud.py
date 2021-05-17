@@ -48,7 +48,7 @@ def update():
 	if validations(data):
 		sql = 'UPDATE contacts SET name=?,phone=?,email=? WHERE id=?'
 		db.run_query(sql, (name, phone, email, id))
-		print('Record updated Succesfully')
+		print('\n\t\tRecord updated Succesfully\n')
 
 	else:
 		print('All fields are required!')
@@ -63,7 +63,7 @@ def create():
 	
 	if validations(data):
 		db.run_query('INSERT INTO contacts VALUES(NULL,?,?,?)',data) 
-		print('Record entered Succesfully')
+		print('\n\t\tRecord entered Succesfully\n')
 	else:
 		print('All fields are required')
 
@@ -81,7 +81,7 @@ def delete():
 		if res.lower() == 'yes':
 			sql = 'DELETE FROM contacts WHERE id=?'
 			db.run_query(sql, (id,))
-			print('Record deleted succesfully')
+			print('\n\t\tRecord deleted succesfully\n')
 
 		elif res.lower() == 'no':
 			clear()

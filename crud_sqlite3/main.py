@@ -18,6 +18,7 @@ def main():
 			opt = input('Select one option:\n')
 
 			if opt.upper() == 'C':
+				crud.clear()
 				db.createDB()
 			elif opt.upper() == 'D':
 				db.dropDB()
@@ -35,6 +36,7 @@ def main():
 						option = int(input('Select a option:\n'))
 
 						if option == 1:
+							crud.clear()
 							crud.create()
 						if option == 2:
 							crud.clear()
@@ -46,7 +48,6 @@ def main():
 						elif option == 6:
 							crud.clear()
 							break
-
 					except:
 						print('Option invalid!')	
 

@@ -28,11 +28,12 @@ class Database:
             );
             ''')
 
-		print('DATABASE CREATE SUCCESFULLY')
+		print('\t\tDATABASE CREATE SUCCESFULLY\n')
 
 
 	def dropDB(self):
 		if DB in os.listdir('.'):
+			#os.close(DB)
 			os.remove(DB)
 			print('DATABASE DROP SUCCESFULLY')
 
