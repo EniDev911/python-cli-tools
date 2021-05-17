@@ -9,5 +9,5 @@
 </p>
 
 <p align="center">
-  <img src="img/02.png" alt="calculator photo" width="380" height="600"/>
+  <img src="img/02.png" alt="calculator photo" width="800" height="600"/>
 </p>
