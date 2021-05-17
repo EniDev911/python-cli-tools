@@ -34,7 +34,7 @@ class Database:
 	def dropDB(self):
 		if DB in os.listdir('.'):
 			os.remove(DB)
-			 print('DATABASE DROP SUCCESFULLY')
+			print('DATABASE DROP SUCCESFULLY')
 
 
 
