@@ -25,11 +25,11 @@ def main():
 
 			elif opt.upper() == 'U':
 				while True:
-					print("[1] Insert a row")
-					print("[2] Show all row")
-					print("[3] Update a row")
-					print("[4] Delete a row")
-					print("[5] Search a row")
+					print("[1] Insert new record")
+					print("[2] Show all records")
+					print("[3] Update a record")
+					print("[4] Delete a record")
+					print("[5] Search a record")
 					print("[6] Exit")
 					print(":=="*20)
 					try:
