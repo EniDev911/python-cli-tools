@@ -6,7 +6,7 @@ El widget **LabelFrame** al igual como el widget **Frame**, es un contenedor esp
 
 
 <p align="center">
-    <img src="img/lblFrame/01.png" alt="LabelFrame" width="630" height="150">
+    <img src="img/lblFrame/01.png" alt="LabelFrame" width="610" height="130">
 </p>  
 
 Para crear un nuevo widget LabelFrame dentro de una ventana padre:  
