@@ -66,5 +66,12 @@
 
 <p style="font-size:12px;">
   <a href="./Python/os">Módulos estándar</a>
+</p>  
+
+
+<p style="font-size:12px;">
+  <a href="./Python/os">Tkinter</a>
 </p>
+
+
 
