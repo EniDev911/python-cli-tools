@@ -34,5 +34,9 @@ El constructor retorna el nuevo widget **LabelFrame**, Options:
 |**labelwidget**|En lugar de una etiqueta de texto, puede usar cualquier widget como etiqueta pasando ese widget como el valor de esta opción. Si proporciona ambas opciones labelwidget y text, la opción text se ignora.|
 |**padx**|Utilice esta opción para agregar relleno adicional dentro de los lados izquierdo y derecho del marco del widget. El valor está en píxeles (left, right)|
 |**pady**|Utilice esta opción para agregar relleno adicional dentro de la parte superior e inferior del marco del widget. El valor está en píxeles(top, bottom)|
+|**relief**|Esta opción controla la apariencia del borde de alrededor del exterior del widget. El estilo predeterminado es tk.GROOVE.|
+|**takefocus**|Normalmente el widget no recibirá el foco, proporcione el valor **True** a esta opción para que el valor forma parte de la secuencia transversal del foco.|
+|**text**|Texto de la etiqueta|
+|**width**|La dimensión horizontal del nuevo marco. Esto se ignorará a menos que también llame .grid_propagate(0) al marco|
 
 
