@@ -70,7 +70,7 @@
 
 
 <p style="font-size:12px;">
-  <a href="./Python/os">Tkinter</a>
+  <a href="./Python/Tkinter">Tkinter</a>
 </p>
 
 
