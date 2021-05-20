@@ -31,6 +31,6 @@ El constructor retorna el nuevo widget **LabelFrame**, Options:
 |**hightlightbackground**|Color de resaltado del foco cuando el widget no tiene foco.|
 |**hightlightthickness**|Espesor del resaltado de enfoque.|
 |**labelanchor**|Utilice esta opción para especificar la posición de la etiqueta en el borde del widget. La posición predeterminada es 'nw', que coloca la etiqueta en el extremo izquierdo del borde superior del borde superior. Para conocer las 9 posiciones posibles de las etiquetas, vea el siguiente diagrama: 
-![]( "posiciones")
+![](img/lblFrame/02.png "posiciones")
 
 
