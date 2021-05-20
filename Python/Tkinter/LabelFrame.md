@@ -40,3 +40,7 @@ El constructor retorna el nuevo widget **LabelFrame**, Options:
 |**width**|La dimensión horizontal del nuevo marco. Esto se ignorará a menos que también llame .grid_propagate(0) al marco|
 
 
+**Siguiente:**<a href='#'>14. El widget Listbox</a>  
+**Inicio:**<a href='./README.md'>Contenido principal</a>  
+**Siguiente:**<a href='#'>12. El widget Label</a>  
+
