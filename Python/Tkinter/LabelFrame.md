@@ -30,7 +30,10 @@ El constructor retorna el nuevo widget **LabelFrame**, Options:
 |**height**|La dimensión vertical del nuevo marco. Esto se ignorará a menos que también llame .grid_propagate(0) al marco|
 |**hightlightbackground**|Color de resaltado del foco cuando el widget no tiene foco.|
 |**hightlightthickness**|Espesor del resaltado de enfoque.|
-|**labelanchor**|Utilice esta opción para especificar la posición de la etiqueta en el borde del widget. La posición predeterminada es 'nw', que coloca la etiqueta en el extremo izquierdo del borde superior del borde superior. Para conocer las 9 posiciones posibles de las etiquetas, vea el siguiente diagrama: <br>![](img/lblFrame/02.png "posiciones")|
+|**labelanchor**|Utilice esta opción para especificar la posición de la etiqueta en el borde del widget. La posición<br>
+                 predeterminada es 'nw', que coloca la etiqueta en el extremo izquierdo del borde superior del borde superior.<br>
+                 Para conocer las 9 posiciones posibles de las etiquetas, vea el siguiente diagrama: <br>![](img/lblFrame/02.png "posiciones")|
 |**labelwidget**|En lugar de una etiqueta de texto, puede usar cualquier widget como etiqueta pasando ese widget como el valor de esta opción. Si proporciona ambas opciones labelwidget y text, la opción text se ignora.|
+|**padx**|Utilice esta opción para agregar relleno adicional dentro de los lados izquierdo y derecho del marco del widget. El valor está en píxeles|
 
 
