@@ -2,11 +2,11 @@
 
 ## El widget **LabelFrame**  
 
-El widget **LabelFrame** al igual como el widget **Frame**, es un contenedor especial, un área rectangular que puede contener otros widgets. Sin embargo, a diferencia del widget **Frame** el widget **LabelFrame** le permite mostrar una etíqueta como parte del borde alrededor del área.   
+El widget **LabelFrame** al igual como el widget **Frame**, es un contenedor especial, un área rectangular que puede contener otros widgets. Sin embargo, a diferencia del widget **Frame**. Sin embargo, a diferencia del widget **Frame**, el widget **LabelFrame** le permite mostrar una etíqueta como parte del borde alrededor del área.   
 
 
 <p align="center">
-    <img src="img/lblFrame/01.png" alt="LabelFrame" width="610" height="130">
+    <img src="img/lblFrame/01.png" alt="LabelFrame" width="650" height="170">
 </p>  
 
 Para crear un nuevo widget LabelFrame dentro de una ventana padre:  
@@ -29,18 +29,6 @@ El constructor retorna el nuevo widget **LabelFrame**, Options:
 |**bd** o **borderwidth**| Ancho del borde dibujado alrededor del perímetro del widget|
 |**height**|La dimensión vertical del nuevo marco. Esto se ignorará a menos que también llame .grid_propagate(0) al marco|
 |**hightlightbackground**|Color de resaltado del foco cuando el widget no tiene foco.|
-|**hightlightthickness**|Espesor del resaltado de enfoque.|
-|**labelanchor**|Utilice esta opción para especificar la posición de la etiqueta en el borde del widget. La posición predeterminada es 'nw', que coloca la etiqueta en el extremo izquierdo del borde superior del borde superior. Para conocer las 9 posiciones posibles de las etiquetas, vea el siguiente diagrama: <br>![](img/lblFrame/02.png "posiciones")|
-|**labelwidget**|En lugar de una etiqueta de texto, puede usar cualquier widget como etiqueta pasando ese widget como el valor de esta opción. Si proporciona ambas opciones labelwidget y text, la opción text se ignora.|
-|**padx**|Utilice esta opción para agregar relleno adicional dentro de los lados izquierdo y derecho del marco del widget. El valor está en píxeles (left, right)|
-|**pady**|Utilice esta opción para agregar relleno adicional dentro de la parte superior e inferior del marco del widget. El valor está en píxeles(top, bottom)|
-|**relief**|Esta opción controla la apariencia del borde de alrededor del exterior del widget. El estilo predeterminado es tk.GROOVE.|
-|**takefocus**|Normalmente el widget no recibirá el foco, proporcione el valor **True** a esta opción para que el valor forma parte de la secuencia transversal del foco.|
-|**text**|Texto de la etiqueta|
-|**width**|La dimensión horizontal del nuevo marco. Esto se ignorará a menos que también llame .grid_propagate(0) al marco|
 
 
-**Siguiente:**<a href='#'>14. El widget Listbox</a>  
-**Inicio:**<a href='./README.md'>Contenido principal</a>  
-**Siguiente:**<a href='#'>12. El widget Label</a>  
 
