@@ -8,5 +8,5 @@ Describe el conjunto de widgets de *Tkinter*. Incluye cobertura de los widgets t
 
 ## Tabla de contenido  
 
-<a href="./LabelFrame.md">LabelFrame</a>
-<a href="./Lisbox.md">Listbox</a>
+- <a href="./LabelFrame.md">LabelFrame</a>
+- <a href="./Listbox.md">Listbox</a>
