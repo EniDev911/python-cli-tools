@@ -8,7 +8,13 @@
 - *Exportar e importar bases de datos Mysql con la línea de comandos.*
 
 <p style="font-size:12px;">
-  <a href="./Export_import_MySql">MySql Export e Import</a>
+  <a href="./Mysql/Export_import_MySql">MySql Export e Import</a>
+</p>
+
+- *Administrar usuarios y permisos en Mysql.* 
+
+<p style="font-size:12px;">
+  <a href="./Mysql/Manage_users_Mysql">MySql Export e Import</a>
 </p>
 
 - *Scripts Mysql.*
