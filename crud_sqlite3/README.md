@@ -1,6 +1,6 @@
 - Install requirements.txt 
 
-  python -m pip install requirements.txt  
+  python -m pip -r install requirements.txt  
   
 - run main.py 
 
