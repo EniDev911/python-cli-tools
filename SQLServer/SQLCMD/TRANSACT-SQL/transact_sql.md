@@ -1,0 +1,2 @@
+
+TRANSACT-SQL es un lenguaje muy potente que nos permite definir casi cualquier tarea que queramos efectuar sobre la base de datos; incluye características propias de cualquier lenguaje de programación, características que nos permiten definir la lógica necesaria para el tratamiento de la información:
