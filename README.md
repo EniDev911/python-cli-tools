@@ -14,7 +14,7 @@
 - *Administrar usuarios y permisos en Mysql.* 
 
 <p style="font-size:12px;">
-  <a href="./Mysql/Manage_users_Mysql">MySql Export e Import</a>
+  <a href="./Mysql/Manage_users_Mysql">MySql user manage</a>
 </p>
 
 - *Scripts Mysql.*
