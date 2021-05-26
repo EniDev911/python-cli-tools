@@ -1,41 +1,30 @@
 import os
 import time
+from classes.validations import Validations
 from classes.contact import Contact
 from classes.dbcontacts import DBContacts
-from classes.validations import Validations
 from prettytable import PrettyTable
-
 validator = Validations()
 db = DBContacts()
 
-def print_option():
-	print('Agenda de contacto')
-	print('*'*50)
-	print('Selecciona una opción')
-	print('[C]rear un contacto')
-	print('[L]istado de contactos')
-	print('[M]odificar un contacto')
-	print('[B]uscar contacto')
-	print('[S]alir')
 
-def run():
-    print_option()
-
-    option = input()
-    option = option.upper()
-
-    if option == 'C':
-        create_contact()
-
-    elif option == 'L':
-        list_contact()
+def print_options():
+    print('AGENDA DE CONTACTOS')
+    print('*' * 50)
+    print('Selecciona una opción:')
+    print('[C]rear contacto')
+    print('[L]istado de contactos')
+    print('[M]odificar contacto')
+    print('[E]liminar contacto')
+    print('[B]uscar contacto')
+    print('[S]ALIR')
 
 
-## Funciones de las opciones
-
-def check_contact_data(message, data_name):
+def check_contact_data(message, data_name, force = True):
     print(message)
     input_data = input()
+    if not force and not input_data:
+        return
     try:
         getattr(validator, f'validate{data_name.capitalize()}')(input_data)
         return input_data
@@ -43,7 +32,9 @@ def check_contact_data(message, data_name):
         print(err)
         check_contact_data(message, data_name)
 
+
 def create_contact():
+
     print('CREACIÓN DE CONTACTO')
     print('*' * 50)
     name = check_contact_data('Inserta el nombre:', 'name')
@@ -53,23 +44,100 @@ def create_contact():
     birthday = check_contact_data('Inserta la fecha de nacimiento (YYYY-MM-DD):', 'birthday')
 
     contact = Contact(None, name, surname, email, phone, birthday)
-
     if db.save_contact(contact):
-    	print('Contacto guardado con éxito')
+        print('Contacto insertado con éxito')
     else:
-    	print('Error al guardar el contacto')
+        print('Error al guardar el contacto')
 
 
-def list_contact():
+def list_contacts():
+    list_contacts = db.list_contacts()
 
-    list_contact = db.list_contact()
-
-    if not list_contact:
+    if not list_contacts:
         return print('Todavía no hay contactos guardados')
 
-    table = PrettyTable(db.get_schema().keys())
+    _print_table_contacts(list_contacts)
 
-    for contact in list_contact():
+
+def search_contact():
+
+    filters = {}
+    print('Introduce un nombre (vacío para usar otro filtro):')
+    nombre = input()
+    if nombre:
+        filters['NAME'] = nombre
+    print('Introduce un apellido (vacío para usar otro filtro):')
+    apellidos = input()
+    if apellidos:
+        filters['SURNAME'] = apellidos
+    print('Introduce un email (vacío para usar otro filtro):')
+    email = input()
+    if email:
+        filters['EMAIL'] = email
+
+    try:
+        list_contacts = db.search_contacts(filters)
+        if not list_contacts:
+            return print('No hay ningún contacto con esos criterios de búsqueda')
+
+        _print_table_contacts(list_contacts)
+    except ValueError as err:
+        print(err)
+        time.sleep(1)
+        search_contact()
+
+
+def update_contact():
+
+    list_contacts()
+
+    print('Introduce el id del contacto que quieres actualizar:')
+    id_object = input()
+
+    data = {}
+    nombre = check_contact_data('Introduce un nombre (vacío para mantener el nombre actual):', 'name', False)
+    if nombre:
+        data['NAME'] = nombre
+    apellidos = check_contact_data('Introduce un apellido (vacío para mantener los apellidos actuales):', 'surname', False)
+    if apellidos:
+        data['SURNAME'] = apellidos
+    email = check_contact_data('Introduce un email (vacío para mantener el email actual):', 'email', False)
+    if email:
+        data['EMAIL'] = email
+    phone = check_contact_data('Introduce un teléfono (vacío para mantener el teléfono actual):', 'phone', False)
+    if phone:
+        data['PHONE'] = phone
+    birthday = check_contact_data('Introduce una fecha de nacimiento YYYY-MM-DD (vacío para mantener la fecha actual):', 'birthday', False)
+    if birthday:
+        data['BIRTHDAY'] = birthday
+    
+    try:
+        res = db.update(id_object, data)
+        if res:
+            print('Contacto actualizado con éxito')
+    except Exception as err:
+        print(err)
+        time.sleep(1)
+        update_contact()
+
+def delete_contact():
+    list_contacts()
+
+    print('Introduce el id del contacto que quieres eliminar:')
+    id_object = input()
+    try:
+        res = db.delete(id_object)
+        if res:
+            print('Contacto eliminado con éxito')
+    except Exception as err:
+        print(err)
+        time.sleep(1)
+        delete_contact()
+    
+
+def _print_table_contacts(list_contacts):
+    table = PrettyTable(db.get_schema().keys())
+    for contact in list_contacts:
         table.add_row([
             contact.id_contact,
             contact.name,
@@ -80,11 +148,32 @@ def list_contact():
         ])
 
     print(table)
-    print('Pulsa intro para salir')
+    print('Pulsa cualquier letra para continuar')
     command = input()
 
+def run():
+    print_options()
 
+    command = input()
+    command = command.upper()
 
+    if command == 'C':
+        create_contact()
+    elif command == 'L':
+        list_contacts()
+    elif command == 'M':
+        update_contact()
+    elif command == 'E':
+        delete_contact()
+    elif command == 'B':
+        search_contact()
+    elif command == 'S':
+        os._exit(1)
+    else:
+        print('Comando inválido')
 
-if __name__ == '__main__':
-	run()
+    time.sleep(1)
+    run()
+
+if __name__ == "__main__":
+    run()

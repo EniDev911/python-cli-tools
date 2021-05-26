@@ -39,43 +39,25 @@ class DBContacts(DBbyCSV):
         data = [contact.name, contact.surname, contact.email, contact.phone, contact.birthday]
         return self.insert(data)
 
-
-
-    def get_all(self):
-
-        list_data = []
-        list_header = []
-
-        with open(self._filename, mode='r', encoding='utf-16') as csv_file:
-            csv_reader = csv.reader(csv_file, delimiter=';')
-            is_header = True
-
-            for row in csv_reader:
-                    list_header = row
-                    is_header = False
-                    continue
-
-            if row:
-                file = {}
-                for key, value in enumerate(row):
-                    file[list_header[key]] = value
-
-                list_data.append(file)
-
-        return list_data
+    def update_contact(self):
+        pass
 
 
 
 
+    def list_contacts(self):
 
-    def list_contact(self):
         list_contacts = self.get_all()
+
+        return self._create_object_contacts(list_contacts)
+
+
+    def _create_object_contacts(self, list_contacts):
 
         if not list_contacts:
             return None
 
         object_contacts = []
-
         # Convertimos los datos a objetos de tipo contact
         for contact in list_contacts:
             c = Contact(contact['ID'], contact['NAME'], contact['SURNAME'],contact['EMAIL'], contact['PHONE'], contact['BIRTHDAY'])
@@ -86,39 +68,8 @@ class DBContacts(DBbyCSV):
     def get_schema(self):
         return SCHEMA
 
-    def insert(self, data):
-        id_contact = self.get_last_id() + 1
-        line = [id_contact] + data
-
-
-        with open(self._filename, mode = 'a', encoding='utf-16') as csv_file:
-            data_writer = csv.writer(csv_file, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL,
-                lineterminator='\n')
-
-            data_writer.writerow(line)
-
-        return True
 
 
 
-    def get_last_id(self):
-
-        list_ids = []
-        with open(self._filename, mode='r', encoding='utf-16') as csv_file:
-            csv_reader = csv.reader(csv_file, delimiter=';')
-            is_header = True
-            for row in csv_reader:
-                if is_header:
-                    is_header = False
-                    continue
-
-                if row:
-                    list_ids.append(row[0])
-
-        if not list_ids:
-            return 0
-
-        list_ids.sort(reverse = True)
-        return int(list_ids[0])
 
 
