@@ -1,6 +1,6 @@
 <h2 align="center">Introducción a GIT</h2>
 
-**Configuración Básica**
+## Configuración Básica
 
 - Configurar el nombre que salen en los commits. 
 ```bash
@@ -30,3 +30,12 @@
 ```bash   
     git add -m "first commit"
 ```
+- Añadir commit dentro de vim en caso de no colocar el prefijo "-m"
+```bash
+## Se abre el editor
+## Presionamos la tecla i para escribir
+Main commit
+## Presionamos la tecla esc para cambiar a modo comando
+## Y salimos escribiendo wq! y presionando Enter   
+```
+
