@@ -3,3 +3,4 @@ CREATE TABLE tasks(
 	title VARCHAR(200),
     description varchar(400)
 );
+
