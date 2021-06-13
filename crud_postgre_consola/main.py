@@ -1,4 +1,6 @@
 from database.connection import DAO
+import functions
+
 
 def main_menu():
 	running = True
@@ -25,19 +27,22 @@ def main_menu():
 				run_option(opt)
 				right_opt = True
 
+
 def run_option(option):
-	obj_dao = DAO()
+	objDao = DAO()
 	if option == 1:
 		try:
-			books = obj_dao.get_book()
+			books = objDao.get_book()
 			if len(books) > 0:
-				for book in books:
-					print(book)
+				functions.get_books(books)
 			else:
-				print('No hay registros en la base de datos aún.')			
-		except:
-			print('error')
+				print('No hay registros en la base de datos aún.')	
 
+		except:
+			print('Ocurrio un error.')
+	elif option == 2:
+		functions.get_data_register()
+		
 
 
 
