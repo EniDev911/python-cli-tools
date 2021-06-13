@@ -30,20 +30,20 @@
 - *Cómo configurar ST3 para la edición de Markdown*
 
 <p style="font-size:12px;">
-  <a href="./ST3_edit_markdown">ST3 para editar Markdown</a>
+  <a href="./Sublimetext/ST3_edit_markdown">ST3 para editar Markdown</a>
 </p>
 
 
 - *Cómo configurar ST3 para mejorar el aspecto visual*
 
 <p style="font-size:12px;">
-  <a href="./SublimeText_Theme">Instalar y modificar un tema</a>
+  <a href="./Sublimetext/SublimeText_Theme">Instalar y modificar un tema</a>
 </p>
 
 - *Cómo crear Snippet en ST3*
 
 <p style="font-size:12px;">
-  <a href="./Snippet_SublimeText">Crear Snippet</a>
+  <a href="./Sublimetext/Snippet_SublimeText">Crear Snippet</a>
 </p>
 
 ---  
