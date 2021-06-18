@@ -13,4 +13,4 @@
 
 |Combinación|Descripción|
 |-----------|-----------|
-|CTRL+K y CTRL+C o CTRL+U|Comentar o descomentar selección|
+|CTRL+K y CTRL+C o CTRL+U|Comentar o descomentar línea actual del cursor, o puede seleccionar bloques|
