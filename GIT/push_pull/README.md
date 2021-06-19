@@ -30,6 +30,8 @@ El comando <b>git push</b> se usa para transferir o enviar la confirmación (com
 
 
 5. **Agregue los archivos al nuevo repositorio local** 
+    - Usando el comando <b>(git add .)</b> en su bash para agregar todos los archivos de la carpeta dada.  
+    - Usando el comando <b>git status</b>
 
 
 
