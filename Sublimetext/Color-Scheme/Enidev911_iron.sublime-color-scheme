@@ -1,0 +1,230 @@
+// view.settings().set("color_scheme", "Enidev911_iron.sublime-color-scheme")
+
+{
+	"name": "Enidev911 iron", 
+	"variables":{
+		"main_fg": "#EFA128",
+		"second_fg": "rgb(240, 240, 160)",
+		"operator": "#F54006",
+		"constants": "#F3ED1B",
+		"select_fg" : "#FFF",
+		"integrate_func": "rgb(255, 120, 110)",
+		"parameters": "#E2E2E0"
+	},
+
+	"globals":{
+
+		// fondo
+		"background": "#141B22",
+		// texto
+		"foreground": "rgb(255, 255, 255)",
+		// cursor
+		"caret": "var(main_fg)",
+		"accent": "#FF9003",
+		// selección
+		"selection": "#900510",
+	
+
+	},	
+	"rules":[
+		// (General)
+		{
+			// Comment
+			"name" : "Comment",
+			"scope": "comment",
+			"foreground": "#6CA61D",
+			"selection_foreground": "white",
+			"font_style": "italic"
+		},	
+		{
+			// Strings
+			"name": "String",
+			"scope": "string",
+			"foreground": "#D6C248",
+		},
+		{
+			// Keywords
+			"scope": "keyword",
+			"foreground": "var(main_fg)",
+			"font_style" : "bold",
+		},
+		{
+			// class "name"
+			"scope": "entity.name",
+			"foreground": "var(second_fg)",
+			"font_style" : "",
+		},		
+		{
+			// (methods, instance)
+			"scope": "variable.function",
+			"foreground": "var(integrate_func)",
+			"font_style" : "bold",
+		},
+
+		// (Python)
+		{
+			// (magic_method_variable)
+            "scope": "support.variable.magic.python",
+            "foreground": "var(second_fg)",
+            "font_style": "bold",
+
+		},
+		{
+			// (print, input)
+            "scope": "support.function.builtin.python",
+            "foreground": "var(integrate_func)",
+            "selection_foreground": "var(select_fg)",
+            "font_style": "bold",
+
+		},
+		{
+			// (as)
+			"include": "name",
+            "scope": "keyword.control.import.as.python",
+            "foreground": "var(operator)",
+            "selection_foreground": "var(select_fg)",
+            "font_style": "bold",
+
+		},
+		
+		{
+			// (if)
+            "scope": "keyword.control.conditional.if.python",
+            "foreground": "var(operator)",
+            "selection_foreground": "var(select_fg)",
+            "font_style": "bold",
+
+		},
+		{
+			// (tuple empty)
+            "scope": "meta.sequence.tuple.empty.python",
+            "foreground": "var(second_fg)",
+            "selection_foreground": "var(select_fg)",
+            "font_style": "bold",
+
+		},
+		{
+			// (tuple '('a,2,3) and list '['a,2,4])
+            "scope": "punctuation.section.sequence.begin.python",
+            "foreground": "var(second_fg)",
+            "selection_foreground": "var(select_fg)",
+            "font_style": "bold",
+		},
+		{
+			// (tuple (a,2,3')' and list [a,2,4']')
+            "scope": "punctuation.section.sequence.end.python",
+            "foreground": "var(second_fg)",
+            "selection_foreground": "var(select_fg)",
+            "font_style": "bold",
+		},
+		{
+			// (tuple (a,2','3) and list [a','2,4])
+            "scope": "punctuation.separator.sequence.python",
+            "foreground": "var(operator)",
+            "selection_foreground": "var(select_fg)",
+            "font_style": "bold",
+
+		},
+		{
+			// (Docstring)
+            "name": "Python docstrings",
+            "scope": "comment.block.documentation.python",
+            "foreground": "#E8C49A",
+            "font_style": "italic",
+
+		},
+		{
+			// (class)
+			"scope": "meta.class.python",
+			"foreground": "var(main_fg)",
+			"font_style" : "bold"
+		},
+		{
+			// (def)
+			"scope":"meta.function.python",
+			"foreground": "var(main_fg)",
+			"font_style": "bold"
+		},
+		{
+			// (continue)
+			"scope":"keyword.control.flow.continue.python",
+			"foreground": "var(operator)",
+			"font_style": "bold"
+		},
+		{
+			// (break)
+			"scope":"keyword.control.flow.break.python",
+			"foreground": "var(operator)",
+			"font_style": "bold"
+		},
+		{
+			// (pass)
+			"scope":"keyword.control.flow.pass.python",
+			"foreground": "var(operator)",
+			"font_style": "bold"
+		},
+		{
+			// (yield)
+			"scope":"keyword.control.flow.yield.python",
+			"foreground": "var(operator)",
+			"font_style": "bold"
+		},
+
+		{
+			// (None|True|False|Ellipsis|NotImplemented|__debug__)
+			"scope":"constant.language.python",
+			"foreground": "var(constants)",
+			"font_style": "bold"
+		},
+		{
+			//(=)
+			"scope": "keyword.operator.assignment.python",
+			"foreground": "var(operator)",
+			"selection_foreground": "var(select_fg)",
+		},
+		{
+			// (*)
+			"scope": "constant.language.import-all.python",
+			"foreground": "var(operator)",
+			"font_style" : "bold",
+		},
+		{
+			//(p,p2,p3)
+			"scope": "punctuation.separator.parameters.python",
+			"foreground": "var(operator)",
+			"selection_foreground": "white",
+		},
+		{
+			//(def 'name')
+			"name": "Functions name",
+			"scope": "entity.name.function",
+			"foreground": "var(second_fg)",
+		},
+		{
+			// (return)
+			"scope": "keyword.control.flow.return.python",
+			"foreground": "var(operator)",
+			"font_style" : "bold",
+		},
+		{
+			// ('param')
+			"scope": "meta.function.parameters.python",
+			"foreground": "var(parameters)",
+			"font_style" : "",
+		},
+		{
+			//Setting python function (lambda :)
+			"scope": "meta.function.inline.python",
+			"foreground": "var(second_fg)",
+			"font_style": "",
+			"selection_foreground": "white",
+		},
+		{
+			// (lambda)
+			"scope": "storage.type.function.inline.python",
+			"foreground": "var(operator)",
+			"font_style": "italic",
+			"selection_foreground": "white",
+		},
+	]
+}
