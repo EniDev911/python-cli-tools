@@ -16,8 +16,10 @@ git show-branch
 Esto nos muestra todas las ramas del proyecto con sus commits realizados.
 
 <p align="center">
-    <img src="img/01.png">
+    <img src="img/01.png" width="700">
 </p>
+
+
 
 
 **Pasar de una rama a otra**  
@@ -75,6 +77,7 @@ En la siguiente imagen puedes ver una secuencia de comandos y su salida. Primero
 "git branch" para confirmar en qué rama nos encontramos y por último el merge para fusionarla con la rama nueva. 
 
 <p align="center">
-    <img src="img/02.png" width="550" height="300">
+    <img src="img/02.png">
 </p>
+
 
