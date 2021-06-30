@@ -18,7 +18,7 @@ while attempts!=0 and running:
         print(f"The number I'm thinking is less (attempts:{attempts})")
     elif number==random_number:
         print("Congrats you guessed the magic number in {attempts} attempts".format(attempts=attempts))
-        break
+        running = False
     if attempts==0:
         print("Good luck for the next goodbye")
         running = False

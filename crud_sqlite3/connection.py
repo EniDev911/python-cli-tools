@@ -1,11 +1,11 @@
+# Enidev911: https://github.com/EniDev911
 import sqlite3 
 import os
 
 DB = 'database.db'
 
-
 class Database:
-
+	"""This class defines the methods to create the database and tun a query"""
 	def run_query(self, query, parameters = ()):
 		with sqlite3.connect(DB) as conn:
 			try:
@@ -36,6 +36,4 @@ class Database:
 			#os.close(DB)
 			os.remove(DB)
 			print('DATABASE DROP SUCCESFULLY')
-
-
 
