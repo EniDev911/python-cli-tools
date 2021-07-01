@@ -10,7 +10,7 @@ Esta guía te va ayudar a como configurar SublimeText 3 para adaptarlo a tus nec
 ## <a href="TOC"></a>  
 
 1. [ST3 para Markdown](ST3_edit_markdown/README.md)
-1. [ST3 atajos de teclado]("./ST3_shorcuts_effective")
+1. [ST3 atajos de teclado](./ST3_shorcuts_effective/README.md)
 1. [ST3 crear esquema personalizado]("Color-Scheme")
 
 ## <a name="intro">Descripción</a>  
@@ -21,17 +21,23 @@ Si bien en el mundo del desarrollo de Software una de las herramientas fundament
 
 - [Descarga oficial](http://sublimetext.com/download)
 
-Una vez instalado, el siguiente paso es obligatorio para poder seguir los topicos de esta guía ya que en ocasiones debemoremos instalar paquetes de terceros para extender la funcionalidad de este editor, debemos instalar lo que se conoce como un administrador de paquetes (**Package congtrol**) es un paso muy sencillo, solo debemos ir en el menú superior y buscar **Tools** -> **Install Package Control**  
+Una vez instalado, el siguiente paso es obligatorio para poder seguir los topicos de esta guía ya que en ocasiones debemoremos instalar paquetes de terceros para extender la funcionalidad de este editor, debemos instalar lo que se conoce como un administrador de paquetes (**Package control**) es un paso muy sencillo, solo debemos ir en el menú superior y buscar **Tools** -> **Install Package Control**  
 
-<p>
-    <img src="#" alt="install package control">
+<p align="center">
+    <img src="assets/package_control01.png" alt="install package control">
 </p>
 
 Hecho esto ahora se nos habilitará una nueva opción **Preferences** del menu superior:  
 
 <p align="center">
     <img src="assets/01.png">
-</p>  
+</p>
+
+Ahora tenemos package control listo para gestionar la instalación de nuevos plugín así mismo como elimarlos o re-instalarlos:  
+
+<p align="center">
+    <img src="assets/package_control03.png">
+</p>
 
 ## <a href="TOC"></a>  
 
