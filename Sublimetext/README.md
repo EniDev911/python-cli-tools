@@ -19,7 +19,7 @@ Si bien en el mundo del desarrollo de Software una de las herramientas fundament
 
 ## <a name="install">Instalación</a>  
 
-- [Descarga oficial](http://sublimetext.com/download)
+- [Descarga oficial](http://sublimetext.com/download){:target="_blank"}
 
 Una vez instalado, el siguiente paso es obligatorio para poder seguir los topicos de esta guía ya que en ocasiones debemoremos instalar paquetes de terceros para extender la funcionalidad de este editor, debemos instalar lo que se conoce como un administrador de paquetes (**Package control**) es un paso muy sencillo, solo debemos ir en el menú superior y buscar **Tools** -> **Install Package Control**  
 

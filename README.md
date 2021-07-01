@@ -30,7 +30,7 @@
 - *Cómo configurar ST3 para la edición de Markdown*
 
 <p style="font-size:12px;">
-  <a href="./Sublimetext/ST3_edit_markdown" target="_blank">ST3 para editar Markdown</a>
+  <a href="./Sublimetext/ST3_edit_markdown">ST3 para editar Markdown</a>
 </p>
 
 
