@@ -7,7 +7,7 @@ Nano contiene por defecto las definiciones de sintaxys para diferentes lenguajes
 </p>
 
 
-Para habilitar el resaltado de un lenguajem agrega mediante la palabra reservada **include** y la ruta al archivo con su definición de resaltado del lenguaje que desee habilitar en su archivo **~/.nanorc**, Entonces, por ejemplo, para habilitar C / C++, agregaría esta línea: 
+Para habilitar el resaltado de un lenguaje agrega mediante la palabra reservada **include** y la ruta al archivo con su definición de resaltado del lenguaje que desee habilitar en su archivo **~/.nanorc**, Entonces, por ejemplo, para habilitar C / C++, agregaría esta línea: 
 
 ```bash
 include include "/usr/share/nano/c.nanorc"
