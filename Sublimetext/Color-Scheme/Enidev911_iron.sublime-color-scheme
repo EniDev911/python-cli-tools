@@ -1,6 +1,5 @@
 // view.settings().set("color_scheme", "Enidev911_iron.sublime-color-scheme")
-
-{
+ {
 	"name": "Enidev911 iron", 
 	"variables":{
 		"main_fg": "#EFA128",

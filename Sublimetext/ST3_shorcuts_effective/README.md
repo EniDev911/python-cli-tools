@@ -47,3 +47,9 @@ Presionando F6 para alternar el corrector ortográfico en Sublime Text.
 
 **Ctrl + Shif + Up** o **Ctrl + Shif + Down** 
 
+**Abrir consola de ST3** 
+
+Abrir la consola nos permite comunicarnos con la API de ST3
+
+**Ctrl+Ñ** 
+
