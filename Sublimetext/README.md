@@ -11,7 +11,7 @@ Esta guía te va ayudar a como configurar SublimeText 3 para adaptarlo a tus nec
 
 1. [ST3 para Markdown](ST3_edit_markdown/README.md)
 1. [ST3 atajos de teclado](./ST3_shorcuts_effective/README.md)
-1. [ST3 crear esquema personalizado]("Color-Scheme")
+1. [ST3 crear esquema personalizado](./Color-Scheme/README.md)
 
 ## <a name="intro">Descripción</a>  
 
