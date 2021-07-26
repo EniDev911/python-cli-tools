@@ -14,7 +14,7 @@ los cursos de Microsoft.
 
 Para descargar el script de la bases de datos Northwind. En el siguiente enlace:  
 
-[Descargar script. 💾]("Scripts/Northwind.sql")
+[Descargar script. 💾](Scripts/Northwind.sql)
 
 El script contiene la información para restaurar toda la estructura de la base de datos y su contenido.  
 Por lo tanto, no basta con ejecutarlo, ya que te generará un error, veamos como restaurarlo en SQL Server.  
