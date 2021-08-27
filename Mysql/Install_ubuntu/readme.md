@@ -71,6 +71,50 @@ Luego nos pregunta si queremos recargar la tabla de privilegios. Pondremos si (Y
 Reload privilege tables now? (Press y|Y for Yes, any other key for No) : y
 ```
 
+## Ajustar la autenticación y los privilegios de usuario (opcional):  
+
+En los sistemas Ubuntu con MySQL 5.7 (y versiones posteriores), el usuario **root** de MySQL se configura para la autenticación usando el complemento **auth_socket** de manera predeterminada en lugar de una contraseña. Esto en muchos casos proporciona mayor seguridad y utilidad, pero también puede generar complicaciones cuando deba permitir que un programa externo (como phpMyAdmin) acceda al usuario.  
+
+Para usar un password para conectar a MySQL como **root**, deberemos cambiar el método de autenticación de **auth_socket** a otro complemento, como **caching_sha2_password** o **mysql_native_password**. Para hacer esto, abra la consola de MySQL desde su terminal:
+
+```bash
+sudo mysql
+```
+
+Para ver el método de autenticación utilizado por las cuentas de usuarios de MySQL ejecutamos la siguiente sentencia dentro de la consola de MySQL:  
+
+```bash
+SELECT user, authentication_string, plugin, host FROM mysql.user;
+
+Output
++------------------+------------------------------------------------------------------------+-----------------------+-----------+
+| user             | authentication_string                                                  | plugin                | host      |
++------------------+------------------------------------------------------------------------+-----------------------+-----------+
+| debian-sys-maint | $A$005$lS|M#3K #XslZ.xXUq.crEqTjMvhgOIX7B/zki5DeLA3JB9nh0KwENtwQ4 | caching_sha2_password | localhost |
+| mysql.infoschema | $A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED | caching_sha2_password | localhost |
+| mysql.session    | $A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED | caching_sha2_password | localhost |
+| mysql.sys        | $A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED | caching_sha2_password | localhost |
+| root             |                                                                        | auth_socket           | localhost |
++------------------+------------------------------------------------------------------------+-----------------------+-----------+
+5 rows in set (0.00 sec)
+```
+
+Para configurar la cuenta **root** para autenticar con una password, ejecute una instrucción **ALTER USER** para cambiar qué complemento de autenticación utiliza y establecer una nueva password.  
+
+Cambiamos por un password seguro,la siguiente instrucción cambiará el password de **root**:  
+
+```bash
+# Shell de mysql
+ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'password';
+```
+
+Luego, ejecutamos la instrucción:  
+
+```bash
+# Shell de mysql
+FLUSH PRIVILEGES;
+```
+Para indicar al servidor que vuelva a cargar la tabla de permisos y aplique los nuevos cambios.  
 
 
 
