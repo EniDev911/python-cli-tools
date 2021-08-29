@@ -14,6 +14,8 @@ label = tk.Label(window, image=photo)
 	<img src="img/PhotoImage/01.png">	
 </p>
 
-Actualmente, el widget PhotoImage admite los formatos de archivos GIF, PGM, PPM, PNG a partir de tkinter 8.6.  
+Actualmente, el widget PhotoImage admite los formatos de archivos GIF, PGM, PPM, PNG a partir de tkinter 8.6. 
+
+Para admitir otros formatos de archivo como JPG, JPEG, o BMP, puede utilizar una librería especializada de imágenes como **Pillow** para convertirlos a un formato que el widget **PhotoImage** comprenda. De hecho, la librería Pillow tiene un widget **PhotoImage** compatible con tkinter ubicado en el módulo **Pil.ImageTk.** 
 
 Para admitir otros formatos

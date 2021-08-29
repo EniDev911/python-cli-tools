@@ -118,7 +118,7 @@ CREATE TABLE IF NOT EXISTS contactos (
     PRIMARY KEY (id)
 );
 ```
-CMD: 
+CMD: 0
 
 <p align = 'center'>
   <img src = 'img/02_mysql_import.png' width = 900 height = 170/>
