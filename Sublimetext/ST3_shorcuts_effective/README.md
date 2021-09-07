@@ -4,6 +4,7 @@ Los IDE tienen una tecla de atajo para ir a un nombre de clase, una diferente pa
 
 Para Sublime Text, todo lo que tiene que hacer es presionar **Ctrl + R** para navegar a cualquier función/clase/símbolo en el archivo que está editando actualmente.  
 
+
 <p align="center">
     <img src="img/01.png">
 </p>
@@ -45,7 +46,11 @@ Presionando F6 para alternar el corrector ortográfico en Sublime Text.
 
 **Mover la línea hacia arriba y abajo**  
 
-**Ctrl + Shif + Up** o **Ctrl + Shif + Down** 
+**Ctrl + Shif + Up** o **Ctrl + Shif + Down**
+
+
+**Escribir en la línea siguiente de la posición actual**  
+**Ctrl + Enter** 
 
 **Abrir consola de ST3** 
 

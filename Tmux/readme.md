@@ -65,6 +65,8 @@ Si queremos lanzar tmux directamente dándole un nombre a nuestra sesión (por s
 tmux new -s "Nombre sesión"
 ```
 
+
+
 Para realizar las diferentes acciones, se utiliza un atajo de teclado que permite enviarles comandos a tmux para crear, eliminar o dividir terminales en la ventana (paneles), o movernos a la anterior o siguiente.  
 
 |Atajo|Acción|

@@ -1,5 +1,6 @@
 ## Generar un par de claves SSH  
 
+
 En la línea de comandos para Linux, MacOSX y en Git Bash en Windows, puede generar una clave SSH.  
 
 Comience creando una nueva clave, usando su correo electrónico como etiqueta:
