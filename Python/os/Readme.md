@@ -1,4 +1,4 @@
-## Módulo OS  
+## Módulo OS  
 
 Este módulo provee una manera versátil de usar funcionalidades depndiente del sistema operativo.  
 
