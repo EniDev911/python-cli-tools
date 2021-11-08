@@ -5,6 +5,10 @@ __pycache__/
 # C extensions
 *.so
 
+# sqlite BD.
+*.db
+*-sqlite
+
 #test 
 test.py
 
