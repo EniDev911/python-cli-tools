@@ -1,7 +1,6 @@
 import organize 
 import time
 import os 
-from subprocess import call
 
 USER_PATH = os.getenv('userprofile')
 USERNAME = os.getenv('username')
@@ -15,11 +14,18 @@ list_folders_keys = list(folders.keys())
 list_folders_values = list(folders.values())
 
 
+def clear_screen():
+	platform = os.name 
+	if platform == 'posix':
+		os.system('clear')
+	elif platform == 'nt' or platform == 'ce' or platform == 'dos':
+		os.system('cls')
+
 def get_folder():
 
 	while True:
 
-		call('clear')
+		clear_screen()
 		print('USER : {}'.format(USERNAME.upper()).center(40))
 		print("SELECT THE FOLDER TO ORGANIZE:".center(40))
 		print("------------------------------".center(40)+"\n")
@@ -43,22 +49,22 @@ def get_folder():
 
 			elif int(choice) == 4:
 				break
-		
 
 		except ValueError:
-			call('clear')
 			print("YOU MUST ENTER [1,2,3 or 4]".rjust(30))
 			print('\a')
 			print("+".rjust(7)+"--"*9+"+")
 			print("|  OPTION INVALID!".rjust(24)+'|'.rjust(2))
 			print("+".rjust(7)+"--"*9+"+")
 			time.sleep(1)
+			clear_screen()
 			get_folder()
+
 
 def main():
 
 	while True:
-		call('clear')
+		clear_screen()
 		print(":=="*15+":")
 		print("|\tWELCOME TO FILE ORGANIZER"+'|'.rjust(13))
 		print(":=="*15+":")
@@ -72,10 +78,13 @@ def main():
 			opt = input("(CHOICE): ".rjust(24))
 
 			if opt.upper() == 'O':
+				
 				folder = get_folder()
-				call('clear')
-				organize.organizer(folder)
-				time.sleep(2)
+
+				if folder != None:
+					clear_screen()
+					organize.organizer(folder)
+					time.sleep(2)
 
 			elif opt.upper() == 'E':
 				
@@ -87,7 +96,7 @@ def main():
 				break
 
 			else:
-		
+				
 				print('\a')
 				print("+".rjust(13)+"--"*9+"+")
 				print("|  OPTION INVALID!".rjust(30)+'|'.rjust(2))
