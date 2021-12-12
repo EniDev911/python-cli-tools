@@ -1,3 +1,6 @@
 __pycache__/*
+
+*.db
+
 crud_postgre_consola/database/__pycache__/*
 crud_postgre_consola/__pycache__/*
