@@ -26,17 +26,23 @@ def directory(file_extension: str) -> str:
 		"jpg": "Images",
 		"jpeg": "Images",
 		"png": "Images",
+		"svg": "Images",
+		"ico" : "Icons",
 		"raw": "Images",
 		"mp3": "Music",
 		"mp4": "Videos",
 		"mkv": "Videos",
 		"xlsx": "Excel Files",
 		"ppt": "Slides",
+		"pptx": "Slides",
 		"doc": "Documents",
 		"rar": "Compressed Files",
 		"zip": "Compressed Files",
 		"iso": "Iso Files",
-		"html": "Pages"
+		"html": "Pages",
+		"js": "Scripts",
+		"py": "Scripts",
+		"bat": "Scripts"
 	}
 
 	return folder_by_extension.get(file_extension, 'Extras')
