@@ -1,9 +1,17 @@
 import os 
 import shutil
 import sys
+import time 
 
 
+USER_PATH = os.getenv('userprofile')
+USERNAME = os.getenv('username')
+DOWNLOADS = os.path.join(USER_PATH, "Downloads")
+FOLDERS = {"Desktop": "[1].DESKTOP", 
+		   	"Documents": "[2].DOCUMENTS", 
+		    "Downloads": "[3].DOWNLOADS"}
 
+	
 def directory(file_extension: str) -> str:
 
 	if not file_extension:
@@ -63,10 +71,12 @@ def organizer(path: str):
 	print("All the files was organized".center(40))
 	print(f"sucessfully in {path}".center(40))
 	print()
+	time.sleep(1)
+	os.system("explorer %s" % (path))
 
-if __name__ == "__main__":
-	try:
-		directory_location = sys.argv[1]
-		organizer(directory_location)
-	except Exception as e:
-		print(f"There was an error: {str(e)}")
+#if __name__ == "__main__":
+#	try:
+#		directory_location = sys.argv[1]
+#		organizer(directory_location)
+#	except Exception as e:
+#		print(f"There was an error: {str(e)}")

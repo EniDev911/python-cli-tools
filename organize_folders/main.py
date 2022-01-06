@@ -1,17 +1,11 @@
 import organize 
 import time
 import os 
+from organize import USERNAME, USER_PATH, FOLDERS
 
-USER_PATH = os.getenv('userprofile')
-USERNAME = os.getenv('username')
 
-folders = {"Desktop": "[1].DESKTOP", 
-		   	"Documents": "[2].DOCUMENTS", 
-		    "Downloads": "[3].DOWNLOADS"}
-
-	
-list_folders_keys = list(folders.keys())
-list_folders_values = list(folders.values())
+list_folders_keys = list(FOLDERS.keys())
+list_folders_values = list(FOLDERS.values())
 
 
 def clear_screen():
@@ -21,19 +15,21 @@ def clear_screen():
 	elif platform == 'nt' or platform == 'ce' or platform == 'dos':
 		os.system('cls')
 
-def get_folder():
+def get_path():
 
 	while True:
-
+		os.system('mode con: cols=46 lines=21')
 		clear_screen()
-		print('USER : {}'.format(USERNAME.upper()).center(40))
-		print("SELECT THE FOLDER TO ORGANIZE:".center(40))
-		print("------------------------------".center(40)+"\n")
-		print(list_folders_values[0], end="")
-		print(list_folders_values[1].rjust(14), end="")
-		print(list_folders_values[2].rjust(14), end="\n\n")
-		print("[4].EXIT".center(40))
-		print("------".center(40)+"\n")
+		print()
+		print('USER : {}'.format(USERNAME.upper()).center(45))
+		print()
+		print("SELECT THE FOLDER TO ORGANIZE:".center(45))
+		print("------------------------------".center(45)+"\n")
+		print(" "+list_folders_values[0], end="")
+		print(list_folders_values[1].rjust(16), end="")
+		print(list_folders_values[2].rjust(16), end="\n\n")
+		print("[4].EXIT".center(43))
+		print("------".center(43)+"\n")
 		print()
 
 		try:
@@ -51,35 +47,38 @@ def get_folder():
 				break
 
 		except ValueError:
-			print("YOU MUST ENTER [1,2,3 or 4]".rjust(30))
+			print()
+			print("+".rjust(11)+"--"*9+"+")
+			print("|  OPTION INVALID!".rjust(28)+'|'.rjust(2))
+			print("+".rjust(11)+"--"*9+"+")
+			print()
+			print("YOU MUST ENTER [1,2,3 or 4]".rjust(33))
 			print('\a')
-			print("+".rjust(7)+"--"*9+"+")
-			print("|  OPTION INVALID!".rjust(24)+'|'.rjust(2))
-			print("+".rjust(7)+"--"*9+"+")
-			time.sleep(1)
+			time.sleep(2)
 			clear_screen()
-			get_folder()
+			get_path()
 
 
 def main():
 
 	while True:
 		clear_screen()
+		print()
 		print(":=="*15+":")
-		print("|\tWELCOME TO FILE ORGANIZER"+'|'.rjust(13))
+		print("|\t  WELCOME TO FILE ORGANIZER"+'|'.rjust(11))
 		print(":=="*15+":")
-		print("CHOOSE AN OPTION:".center(40))
-		print("-----------------".center(40)+"\n")
-		print("[O]RGANIZER FILES".rjust(20), end="")
-		print("[E]XIT THE PROGRAM".rjust(20)+"\n")
+		print("CHOOSE AN OPTION:".center(45))
+		print("-----------------".center(45)+"\n")
+		print("[O]RGANIZER FILES".rjust(21), end="")
+		print("[E]XIT THE PROGRAM".rjust(21)+"\n")
 
 
 		try:
-			opt = input("(CHOICE): ".rjust(24))
+			opt = input("(CHOICE): ".rjust(28))
 
 			if opt.upper() == 'O':
 				
-				folder = get_folder()
+				folder = get_path()
 
 				if folder != None:
 					clear_screen()
@@ -93,6 +92,7 @@ def main():
 				print("|".rjust(5)+"DEVELOPED BY ENIDEV911".rjust(27)+"|".rjust(6))
 				print("+".rjust(5)+"--"*16+"+")
 				time.sleep(2)
+				os.system("start https://www.buymeacoffee.com/9111592")
 				break
 
 			else:
@@ -113,4 +113,6 @@ def main():
 
 
 if __name__ == '__main__':
+	os.system('mode con: cols=46 lines=19')
+	os.system("color 5F")
 	main()
