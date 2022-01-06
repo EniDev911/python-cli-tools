@@ -3,9 +3,9 @@
 
 This is a small console tool, to organize your directories that accumulate more files in a disorganized way we talk about: 
 
-- **"The Desktop"**
-- **"Documents"**
-- **"Downloads"**
+- **Desktop**
+- **Documents**
+- **Downloads**
 
 It is designed more for windows, although with some time I will be able to add new functionalities for make it cross-platform.
 
