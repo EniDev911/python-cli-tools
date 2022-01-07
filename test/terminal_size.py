@@ -11,7 +11,7 @@
 
 
 import os
-os.system('mode con: cols=120 lines=32')
+os.system('mode con: cols=10 lines=2')
 
 input("Pantalla: ")
 # XTERM

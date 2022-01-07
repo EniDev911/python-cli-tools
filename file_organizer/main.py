@@ -113,5 +113,5 @@ def main():
 
 if __name__ == '__main__':
 	os.system('mode con: cols=46 lines=19')
-	os.system("color 3F")
+	os.system("color 5F")
 	main()
