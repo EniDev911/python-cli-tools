@@ -2,6 +2,7 @@
 */venv/
 */dist/
 */build/
+*.spec*
 
 *.db
 
