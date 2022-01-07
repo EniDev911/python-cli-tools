@@ -14,15 +14,14 @@
   <a href="./Crud_Csv">Console crud_csv</a>
 </p>
 
+<hr>
 
+<p align="center">
+	<img src="assets/tools_console.png" width="240" height="130">
+</p>
 
-
-<img src="assets/tools_console.png" width="68" align="left">
 
 <h2 align="center">Tools</h2> 
-
-
-![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/f8a005/f8a005?text=+)![](https://via.placeholder.com/15/f8a005/f8a005?text=+)![](https://via.placeholder.com/15/f8a005/f8a005?text=+)![](https://via.placeholder.com/15/f8a005/f8a005?text=+)![](https://via.placeholder.com/15/f8a005/f8a005?text=+)![](https://via.placeholder.com/15/f8a005/f8a005?text=+)![](https://via.placeholder.com/15/f8a005/f8a005?text=+)![](https://via.placeholder.com/15/f8a005/f8a005?text=+)![](https://via.placeholder.com/15/f8a005/f8a005?text=+)![](https://via.placeholder.com/15/f8a005/f8a005?text=+)![](https://via.placeholder.com/15/f8a005/f8a005?text=+)![](https://via.placeholder.com/15/f8a005/f8a005?text=+)![](https://via.placeholder.com/15/f8a005/f8a005?text=+)![](https://via.placeholder.com/15/f8a005/f8a005?text=+)![](https://via.placeholder.com/15/f8a005/f8a005?text=+)![](https://via.placeholder.com/15/f8a005/f8a005?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)![](https://via.placeholder.com/15/000000/000000?text=+)
 
 
 
@@ -32,8 +31,8 @@
 This is a small console tool, to organize your files.
 
 <p align="center">
-	<img src="file_organizer/assets/screen1.png" width="380">
-	<img src="file_organizer/assets/screen2.png" width="380" height="290">
+	<img src="file_organizer/assets/screen1.png" width="410">
+	<img src="file_organizer/assets/screen2.png" width="410" height="312">
 </p>
 
 <p align="center">
