@@ -1,7 +1,7 @@
-import organize 
+
 import time
 import os 
-from organize import USERNAME, USER_PATH, FOLDERS
+from organize import USERNAME, USER_PATH, FOLDERS, organizer
 
 
 list_folders_keys = list(FOLDERS.keys())
@@ -33,7 +33,7 @@ def get_path():
 		print()
 
 		try:
-			choice = input("(CHOICE): ".rjust(24))
+			choice = int(input("(CHOICE): ".rjust(24)))
 			if int(choice) == 1:
 				return os.path.join(USER_PATH, list_folders_keys[0])
 
@@ -46,18 +46,17 @@ def get_path():
 			elif int(choice) == 4:
 				break
 
-		except ValueError:
+
+		except ValueError as e:
+			print("+".rjust(13)+"--"*9+"+")
+			print("|  OPTION INVALID!".rjust(30)+'|'.rjust(2))
+			print("+".rjust(13)+"--"*9+"+")
 			print()
-			print("+".rjust(11)+"--"*9+"+")
-			print("|  OPTION INVALID!".rjust(28)+'|'.rjust(2))
-			print("+".rjust(11)+"--"*9+"+")
-			print()
-			print("YOU MUST ENTER [1,2,3 or 4]".rjust(33))
+			print("YOU MUST ENTER [1,2,3 or 4]".rjust(36))
 			print('\a')
 			time.sleep(2)
 			clear_screen()
-			get_path()
-
+			continue
 
 def main():
 
@@ -82,7 +81,7 @@ def main():
 
 				if folder != None:
 					clear_screen()
-					organize.organizer(folder)
+					organizer(folder)
 					time.sleep(2)
 
 			elif opt.upper() == 'E':
