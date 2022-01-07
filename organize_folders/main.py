@@ -45,6 +45,8 @@ def get_path():
 
 			elif int(choice) == 4:
 				break
+			else:
+				print("A ingresado una opción invalida")
 
 		except ValueError:
 			print()
