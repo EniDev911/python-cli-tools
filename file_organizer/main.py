@@ -1,4 +1,3 @@
-
 import time
 import os 
 from organize import USERNAME, USER_PATH, FOLDERS, organizer
@@ -85,11 +84,11 @@ def main():
 					time.sleep(2)
 
 			elif opt.upper() == 'E':
-				
-				print("+".rjust(5)+"--"*16+"+")
-				print("| THANKS FOR USING THIS PROGRAM".rjust(35)+"|".rjust(3))
-				print("|".rjust(5)+"DEVELOPED BY ENIDEV911".rjust(27)+"|".rjust(6))
-				print("+".rjust(5)+"--"*16+"+")
+				print()
+				print("+".rjust(7)+"--"*16+"+")
+				print("| THANKS FOR USING THIS PROGRAM".rjust(37)+"|".rjust(3))
+				print("|".rjust(7)+"DEVELOPED BY ENIDEV911".rjust(27)+"|".rjust(6))
+				print("+".rjust(7)+"--"*16+"+")
 				time.sleep(2)
 				os.system("start https://www.buymeacoffee.com/9111592")
 				break

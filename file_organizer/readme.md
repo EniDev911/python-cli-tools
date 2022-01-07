@@ -31,3 +31,14 @@ python main.py
 <p align="center">
 	<img src="assets/organizer.gif" alt="gif use" style="border: 3px solid black" width="700" height="450">
 </p>
+
+
+## Download
+
+
+- **portable**:
+
+ 
+<a href="https://www.mediafire.com/file/mwmg1hzktzbx3ig/file_organizer.exe/file" target="_blank">
+  <img alt="Downloads" src="https://img.shields.io/badge/download-mediafire-darkorange?color=blue&logo=mediafire&style=for-the-badge">
+<a/>
