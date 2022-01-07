@@ -1,7 +1,6 @@
-import organize 
 import time
 import os 
-from organize import USERNAME, USER_PATH, FOLDERS
+from organize import USERNAME, USER_PATH, FOLDERS, organizer
 
 
 list_folders_keys = list(FOLDERS.keys())
@@ -33,7 +32,7 @@ def get_path():
 		print()
 
 		try:
-			choice = input("(CHOICE): ".rjust(24))
+			choice = int(input("(CHOICE): ".rjust(24)))
 			if int(choice) == 1:
 				return os.path.join(USER_PATH, list_folders_keys[0])
 
@@ -48,18 +47,17 @@ def get_path():
 			else:
 				print("A ingresado una opción invalida")
 
-		except ValueError:
+
+		except ValueError as e:
+			print("+".rjust(13)+"--"*9+"+")
+			print("|  OPTION INVALID!".rjust(30)+'|'.rjust(2))
+			print("+".rjust(13)+"--"*9+"+")
 			print()
-			print("+".rjust(11)+"--"*9+"+")
-			print("|  OPTION INVALID!".rjust(28)+'|'.rjust(2))
-			print("+".rjust(11)+"--"*9+"+")
-			print()
-			print("YOU MUST ENTER [1,2,3 or 4]".rjust(33))
+			print("YOU MUST ENTER [1,2,3 or 4]".rjust(36))
 			print('\a')
 			time.sleep(2)
 			clear_screen()
-			get_path()
-
+			continue
 
 def main():
 
@@ -84,15 +82,15 @@ def main():
 
 				if folder != None:
 					clear_screen()
-					organize.organizer(folder)
+					organizer(folder)
 					time.sleep(2)
 
 			elif opt.upper() == 'E':
-				
-				print("+".rjust(5)+"--"*16+"+")
-				print("| THANKS FOR USING THIS PROGRAM".rjust(35)+"|".rjust(3))
-				print("|".rjust(5)+"DEVELOPED BY ENIDEV911".rjust(27)+"|".rjust(6))
-				print("+".rjust(5)+"--"*16+"+")
+				print()
+				print("+".rjust(7)+"--"*16+"+")
+				print("| THANKS FOR USING THIS PROGRAM".rjust(37)+"|".rjust(3))
+				print("|".rjust(7)+"DEVELOPED BY ENIDEV911".rjust(27)+"|".rjust(6))
+				print("+".rjust(7)+"--"*16+"+")
 				time.sleep(2)
 				os.system("start https://www.buymeacoffee.com/9111592")
 				break
@@ -116,5 +114,5 @@ def main():
 
 if __name__ == '__main__':
 	os.system('mode con: cols=46 lines=19')
-	os.system("color 3F")
+	os.system("color 5F")
 	main()

@@ -1,7 +1,7 @@
 import os 
 import shutil
 import sys
-import time 
+import time
 
 
 USER_PATH = os.getenv('userprofile')
