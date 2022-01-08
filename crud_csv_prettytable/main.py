@@ -1,9 +1,24 @@
+#-------------------------------------------------------------------------------
+#          Name: main
+#       Version: 1.0
+#         Autor: Marco Contreras
+#       Support: https://www.buymeacoffee.com/9111592
+#
+#   Source code: https://github.com/EniDev911/PythonShell/tree/master/
+#     Copyright: (c) Marco Contreras
+#       Licence: GPL 3.0
+#-------------------------------------------------------------------------------
+
+
+
 import os
 import time
 from classes.validations import Validations
 from classes.contact import Contact
 from classes.dbcontacts import DBContacts
 from prettytable import PrettyTable
+
+
 validator = Validations()
 db = DBContacts()
 
