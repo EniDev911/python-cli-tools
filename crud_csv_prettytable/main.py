@@ -10,7 +10,6 @@
 #-------------------------------------------------------------------------------
 
 
-
 import os
 import time
 from classes.validations import Validations
@@ -23,16 +22,35 @@ validator = Validations()
 db = DBContacts()
 
 
-def print_options():
-    print('AGENDA DE CONTACTOS')
-    print('*' * 50)
-    print('Selecciona una opción:')
-    print('[C]rear contacto')
-    print('[L]istado de contactos')
-    print('[M]odificar contacto')
-    print('[E]liminar contacto')
-    print('[B]uscar contacto')
-    print('[S]ALIR')
+
+def print_title():
+    print("                 _             _ ")      
+    print("                | |           | |")      
+    print("  ___ ___  _ __ | |_ __ _  ___| |_ ___") 
+    print(" / __/ _ \\| '_ \\| __/ _` |/ __| __/ __|")
+    print("| (_| (_) | | | | || (_| | (__| |_\\__ \\")
+    print(" \\___\\___/|_| |_|\\__\\__,_|\\___|\\__|___/")
+    print('*' * 41)
+                                        
+
+def print_option2():
+    print("""
+   ____                     ____
+  ||c ||                   ||s ||
+  ||__|| [C]reate          ||__|| [S]how
+  |/__\\|                   |/__\\|
+
+        ____            ____ 
+       ||e ||          ||d ||
+       ||__|| [E]dit   ||__|| [D]elete
+       |/__\\|          |/__\\|
+
+               ____
+              ||q ||
+              ||__|| [Q]uit
+              |/__\\|
+   """)
+
 
 
 def check_contact_data(message, data_name, force = True):
@@ -164,26 +182,28 @@ def _print_table_contacts(list_contacts):
 
     print(table)
     print('Pulsa cualquier letra para continuar')
-    command = input()
+    choice = input()
 
 def run():
-    print_options()
+    print_title()
+    print_option2()
+    print()
 
-    command = input()
-    command = command.upper()
+    choice = input("(CHOICE): ".rjust(23))
+    choice = choice.upper()
 
-    if command == 'C':
+    if choice == 'C':
         create_contact()
-    elif command == 'L':
+    elif choice == 'S':
         list_contacts()
-    elif command == 'M':
+    elif choice == 'M':
         update_contact()
-    elif command == 'E':
+    elif choice == 'E':
         delete_contact()
-    elif command == 'B':
+    elif choice == 'B':
         search_contact()
-    elif command == 'S':
-        os._exit(1)
+    elif choice == 'Q':
+        os._exit(0)
     else:
         print('Comando inválido')
 
@@ -191,4 +211,6 @@ def run():
     run()
 
 if __name__ == "__main__":
+    os.system('color 1f')
+    os.system('mode con: cols=41 lines=29')
     run()
