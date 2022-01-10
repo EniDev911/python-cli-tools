@@ -46,7 +46,9 @@ def directory(file_extension: str) -> str:
 		"html": "Pages",
 		"js": "Scripts",
 		"py": "Scripts",
-		"bat": "Scripts"
+		"bat": "Scripts",
+		"db": "Database",
+		"sqlite3": "Database"
 	}
 
 	return folder_by_extension.get(file_extension, 'Extras')
