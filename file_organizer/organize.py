@@ -2,10 +2,11 @@ import os
 import shutil
 import sys
 import time
+import getpass
 
 
 USER_PATH = os.getenv('userprofile')
-USERNAME = os.getenv('username')
+USERNAME = getpass.getuser()
 DOWNLOADS = os.path.join(USER_PATH, "Downloads")
 FOLDERS = {"Desktop": "[1].DESKTOP", 
 		   	"Documents": "[2].DOCUMENTS", 
@@ -32,7 +33,10 @@ def directory(file_extension: str) -> str:
 		"mp3": "Music",
 		"mp4": "Videos",
 		"mkv": "Videos",
+		"avi": "Videos",
 		"xlsx": "Excel Files",
+		"csv": "Excel Files",
+		"xls": "Excel Files",
 		"ppt": "Slides",
 		"pptx": "Slides",
 		"doc": "Documents",

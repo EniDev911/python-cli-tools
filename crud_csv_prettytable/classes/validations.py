@@ -10,13 +10,15 @@ class Validations:
         pass
 
     def validateName(self, name):
+
         if len(name) < 3 or len(name) > 50:
-            raise ValueError(f'El nombre debe tener como mínimo 3 caractares y un máximo de 50 caracteres, tamaño actual: {len(name)}')
+            raise ValueError(f'The name must have a minimum of 3 characters and a maximum of 50 characters, current size: {len(name)}')
         return True
 
     def validateSurname(self, surname):
+
         if len(surname) < 5 or len(surname) > 100:
-            raise ValueError(f'Los apellidos deben tener como mínimo 5 caractares y un máximo de 100 caracteres, tamaño actual: {len(surname)}')
+            raise ValueError(f'The surnames must have a minimum of 5 characters and a maximum of 100 characters, current size: {len(surname)}')
         return True
 
 

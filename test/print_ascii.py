@@ -79,8 +79,16 @@ def print_author():
 	print("|______||_| |_||_||_____/  \\___|  \\_/    /_/  |_| |_|")
 
 
+def print_author2():
+	print(" ______         _  _____") 
+	print("|  ____|       (_)|  __ \\")
+	print("| |__    _ __   _ | |  | |  ___ __   __")
+	print("|  __|  | '_ \\ | || |  | | / _ \\\\ \\ / /")
+	print("| |____ | | | || || |__| ||  __/ \\ V /")
+	print("|______||_| |_||_||_____/  \\___|  \\_/")
+
 
 os.system("mode 1000, 1000")
-#print_author()
-#print_title()
+print_author2()
+print_title()
 print_option2()
