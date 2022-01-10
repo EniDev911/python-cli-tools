@@ -1,7 +1,7 @@
 @echo off
 title compiler
 
-IF EXIST "main_.py" (
+IF EXIST "main.py" (
 
 	echo compaling program...
 	python -m pip install pyinstaller
