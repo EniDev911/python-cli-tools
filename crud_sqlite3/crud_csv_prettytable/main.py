@@ -8,8 +8,6 @@
 #     Copyright: (c) Marco Contreras
 #       Licence: GPL 3.0
 #-------------------------------------------------------------------------------
-
-
 import os
 import time
 from classes.validations import Validations
@@ -20,8 +18,6 @@ from prettytable import PrettyTable
 validator = Validations()
 db = DBContacts()
 
-
-
 def print_title():
     print("                  _             _ ")      
     print("                 | |           | |")      
@@ -30,7 +26,6 @@ def print_title():
     print(" | (_| (_) | | | | || (_| | (__| |_\\__ \\")
     print("  \\___\\___/|_| |_|\\__\\__,_|\\___|\\__|___/")
     print('*' * 41)
-
 
 def print_option():
     print("""
@@ -59,9 +54,6 @@ def print_author():
     print(" | |____ | | | || || |__| ||  __/ \\ V /")
     print(" |______||_| |_||_||_____/  \\___|  \\_/")
 
-
-
-
 def clear_screen():
     platform = os.name 
     if platform == 'posix':
@@ -74,8 +66,7 @@ def check_contact_data(message, data_name, force = True):
 
     print()
     print(message.center(41))
-
-    input_data = input("| ".rjust(10))
+    input_data = input("> ".rjust(10))
 
     if not force and not input_data:
         return
@@ -97,20 +88,20 @@ def create_contact():
     surname = check_contact_data("Type the contact's last name", 'surname')
     email = check_contact_data('Type the email:', 'email')
     phone = check_contact_data('Type phone number (9 digits): ', 'phone')
-    birthday = check_contact_data('Inserta la fecha de nacimiento (YYYY-MM-DD):', 'birthday')
+    birthday = check_contact_data('Type date of birth (YYYY-MM-DD)', 'birthday')
 
     contact = Contact(None, name, surname, email, phone, birthday)
-    if db.save_contact(contact):
-        print('Contacto insertado con éxito')
-    else:
-        print('Error al guardar el contacto')
 
+    if db.save_contact(contact):
+        print('Contact successfully registerd')
+    else:
+        print('Failed to save contact')
 
 def list_contacts():
     list_contacts = db.list_contacts()
 
     if not list_contacts:
-        return print('Todavía no hay contactos guardados')
+        return print('No registered contacts')
     clear_screen()
     os.system("mode con: cols=73 lines=29")
     _print_table_contacts(list_contacts)
@@ -119,10 +110,11 @@ def list_contacts():
 def search_contact():
 
     filters = {}
-    print('Introduce un nombre (vacío para usar otro filtro):')
-    nombre = input()
-    if nombre:
-        filters['NAME'] = nombre
+    print('Enter a name (empty to use another filter):')
+    name = input()
+    if name:
+        filters['NAME'] = name
+
     print('Introduce un apellido (vacío para usar otro filtro):')
     apellidos = input()
     if apellidos:
@@ -218,8 +210,6 @@ def run():
     choice = choice.upper()
 
     
-
-
     if choice == 'C':
         clear_screen()
         create_contact()

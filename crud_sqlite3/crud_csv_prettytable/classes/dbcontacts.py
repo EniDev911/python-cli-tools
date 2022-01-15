@@ -33,16 +33,12 @@ class DBContacts(DBbyCSV):
     def __init__(self):
         super().__init__(SCHEMA, 'contacts')
 
-
-
     def save_contact(self, contact):
         data = [contact.name, contact.surname, contact.email, contact.phone, contact.birthday]
         return self.insert(data)
 
     def update_contact(self):
         pass
-
-
 
 
     def list_contacts(self):

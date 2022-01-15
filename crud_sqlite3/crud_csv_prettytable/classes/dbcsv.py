@@ -1,6 +1,5 @@
 import csv
 import re
-
 from tempfile import NamedTemporaryFile
 import shutil
 
@@ -21,23 +20,16 @@ class DBbyCSV:
                 data_writer.writerow(schema.keys())
 
 
-
-
-
-
     def insert(self, data):
         id_contact = self.get_last_id() + 1
         line = [id_contact] + data
-
 
         with open(self._filename, mode = 'a', encoding='utf-16') as csv_file:
             data_writer = csv.writer(csv_file, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL,
                 lineterminator='\n')
 
             data_writer.writerow(line)
-
         return True
-
 
     def get_last_id(self):
 

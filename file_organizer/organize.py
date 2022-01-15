@@ -1,20 +1,20 @@
-import os 
+import os
 import shutil
 import sys
 import time
 import getpass
+from pathlib import Path
 
-
-USER_PATH = os.getenv('userprofile')
+#USER_PATH = os.getenv('userprofile')
+USER_PATH = Path.home()
 USERNAME = getpass.getuser()
 DOWNLOADS = os.path.join(USER_PATH, "Downloads")
 FOLDERS = {"Desktop": "[1].DESKTOP", 
 		   	"Documents": "[2].DOCUMENTS", 
 		    "Downloads": "[3].DOWNLOADS"}
 
-	
 def directory(file_extension: str) -> str:
-
+	
 	if not file_extension:
 		return
 
