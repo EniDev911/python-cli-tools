@@ -187,7 +187,7 @@ def select():
 		show_data()
 		id__ = int(input('Enter id: '))
 		delete_data(id__)
-		input('\n\nYour data has been updated \npress enter to back:')
+		input('\n\nYour data has been deleted \npress enter to back:')
   
 	else:
 		return 0;
