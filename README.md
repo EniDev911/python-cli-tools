@@ -42,5 +42,3 @@ This is a small console tool, to organize your files.
   </a>
 </p>
 
-
-a
