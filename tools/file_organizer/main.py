@@ -1,7 +1,13 @@
-# =================================
-
-# =================================
-
+#-------------------------------------------------------------------------------
+#         Module: main
+#
+#        Author: Marco Contreras
+#         Email: enidev911@gmail.com
+#
+#   Source code: https://github.com/EniDev911/PythonTk/blob/master/audiobook/main.py
+#     Copyright: (c) Marco Contreras
+#       Licence: GPL 3.0
+#-------------------------------------------------------------------------------
 import time
 import os 
 from organize import USERNAME, USER_PATH, FOLDERS, organizer
@@ -86,7 +92,7 @@ def main():
 
 				if folder != None:
 					clear_screen()
-					organizer(folder)
+					organizer(folder) 
 					time.sleep(2)
 
 			elif opt.upper() == 'E':
