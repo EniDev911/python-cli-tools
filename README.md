@@ -9,7 +9,7 @@
 <hr>
 
 <p align="center">
-	<img src="assets/tools_console.png" width="285" height="150">
+	<img src="assets/tools_console.png" width="285" height="165">
 </p>
 
 
