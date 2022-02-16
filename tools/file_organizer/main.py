@@ -30,7 +30,6 @@ def get_locale():
 
 
 def get_path():
-
 	while True:
 		os.system('mode con: cols=46 lines=21')
 		clear_screen()
