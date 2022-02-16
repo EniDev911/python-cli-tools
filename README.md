@@ -1,27 +1,15 @@
-## PythonShell
-
-**console apps with python**  
-
-
-### *Crud with sqlite3 and Prettytable*
-<p style="font-size:12px;">
-  <a href="./crud_sqlite3">Console crud</a>
-</p>
-
-
-### *Crud with csv and Prettytable*
-<p style="font-size:12px;">
-  <a href="./Crud_Csv">Console crud_csv</a>
-</p>
+![GitHub repo size](https://img.shields.io/github/repo-size/EniDev911/python-console-tools?color=%2349D113&logo=files&logoColor=yellow&style=for-the-badge)&nbsp;&nbsp;&nbsp;
+![GitHub top language](https://img.shields.io/github/languages/top/EniDev911/python-console-tools?color=blue&logo=python&logoColor=darkorange&style=for-the-badge)&nbsp;&nbsp;&nbsp;
+![Lines of code](https://img.shields.io/tokei/lines/github/EniDev911/PythonTk?logo=codereview&style=for-the-badge)&nbsp;&nbsp;&nbsp;
 
 <hr>
 
 <p align="center">
-	<img src="assets/tools_console.png" width="240" height="130">
+	<img src="assets/tools_console.png" width="285" height="150">
 </p>
 
 
-<h2 align="center">Tools</h2> 
+<h2 align="center">Tools-Python-Console</h2> 
 
 
 
