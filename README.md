@@ -1,6 +1,6 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/EniDev911/python-console-tools?color=%2349D113&logo=files&logoColor=yellow&style=for-the-badge)&nbsp;&nbsp;&nbsp;
 ![GitHub top language](https://img.shields.io/github/languages/top/EniDev911/python-console-tools?color=blue&logo=python&logoColor=darkorange&style=for-the-badge)&nbsp;&nbsp;&nbsp;
-![Lines of code](https://img.shields.io/tokei/lines/github/EniDev911/PythonTk?logo=codereview&style=for-the-badge)&nbsp;&nbsp;&nbsp;
+![Lines of code](https://img.shields.io/tokei/lines/github/EniDev911/python-console-tools?logo=codereview&style=for-the-badge)&nbsp;&nbsp;&nbsp;
 
 <hr>
 
