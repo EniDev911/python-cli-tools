@@ -19,6 +19,9 @@ from mysql.connector import Error
 class DAO:
 
 	def __init__(self):
+		"""
+
+		"""
 		config = dotenv_values()
 		try:
 			self.cnx = mysql.connector.connect(
@@ -46,7 +49,7 @@ class DAO:
 			result = cursor.fetchall()
 			return result
 db = DAO()
-result = db.run_query('SELECT * FROM test;')
+result = db.run_query('SELECT * FROM books;')
 print(result)
 
 
