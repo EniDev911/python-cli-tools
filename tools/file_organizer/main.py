@@ -11,6 +11,7 @@
 import time
 import os 
 from organize import USERNAME, USER_PATH, FOLDERS, organizer
+from locale import getdefaultlocale 
 
 
 list_folders_keys = list(FOLDERS.keys())
@@ -24,8 +25,11 @@ def clear_screen():
 	elif platform == 'nt' or platform == 'ce' or platform == 'dos':
 		os.system('cls')
 
-def get_path():
+def get_locale():
+	print(getdefaultlocale())
 
+
+def get_path():
 	while True:
 		os.system('mode con: cols=46 lines=21')
 		clear_screen()

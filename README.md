@@ -1,13 +1,27 @@
+<<<<<<< HEAD
+=======
+<p align="center">
+	<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/enidev911/python-console-tools?color=%23FF7034&logo=files&logoColor=%23FCCF5A&style=for-the-badge">
+	&nbsp;&nbsp;&nbsp;
+	<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/enidev911/python-console-tools?color=%23FF7034&logo=python&logoColor=%23FF7034&style=for-the-badge">
+	&nbsp;&nbsp;&nbsp;
+	<img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/enidev911/python-console-tools?color=%23FF7034&logo=codereview&logoColor=%23FBE7B2&style=for-the-badge">
+</p>
+>>>>>>> 9775402d2d9cfbf3bc0c05ece374df6c2f31d678
 
 <hr>
 
 <p align="center">
-	<img src="assets/tools_console.png" width="240" height="130">
+	<img src="assets/tools_console.png" width="285" height="165">
 </p>
 
 <h2 align="center">Console-Tools</h2> 
 
+<<<<<<< HEAD
 <br>
+=======
+<h2 align="center">Tools-Python-Console</h2> 
+>>>>>>> 9775402d2d9cfbf3bc0c05ece374df6c2f31d678
 
 
 ### File organizer
