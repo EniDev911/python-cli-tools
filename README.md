@@ -1,18 +1,3 @@
-## PythonShell
-
-**console apps with python**  
-
-
-### *Crud with sqlite3 and Prettytable*
-<p style="font-size:12px;">
-  <a href="./crud_sqlite3">Console crud</a>
-</p>
-
-
-### *Crud with csv and Prettytable*
-<p style="font-size:12px;">
-  <a href="./Crud_Csv">Console crud_csv</a>
-</p>
 
 <hr>
 
@@ -20,9 +5,9 @@
 	<img src="assets/tools_console.png" width="240" height="130">
 </p>
 
+<h2 align="center">Console-Tools</h2> 
 
-<h2 align="center">Tools</h2> 
-
+<br>
 
 
 ### File organizer
