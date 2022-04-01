@@ -101,10 +101,26 @@ def main():
 
 			elif opt.upper() == 'E':
 				print()
+				phrase = 'THANKS FOR USING THIS PROGRAM'
 				print("+".rjust(7)+"--"*16+"+")
-				print("| THANKS FOR USING THIS PROGRAM".rjust(37)+"|".rjust(3))
-				print("|".rjust(7)+"DEVELOPED BY ENIDEV911".rjust(27)+"|".rjust(6))
+				print(f"| ".rjust(8), end="")
+				for letter in phrase:
+					print(f"{letter}", end="", flush=True)
+					time.sleep(0.045)
+				print("|".rjust(3), end="")
+
+
+				phrase = 'DEVELOPED BY ENIDEV911'
+				print()
+				print(f"| ".rjust(8), end="")
+				print("".rjust(4), end="")
+				for letter in phrase:
+					print(f"{letter}", end="", flush=True)
+					time.sleep(0.045)				
+				print("|".rjust(6), end="")
+				print()
 				print("+".rjust(7)+"--"*16+"+")
+				
 				time.sleep(2)
 				os.system("start https://www.buymeacoffee.com/9111592")
 				break
