@@ -1,11 +1,3 @@
-### Este cambio lo envie vía SSH
-
-### Se modifico el archivo en la nube o remoto 
-
-### Esto es lo último que se hizo
-
-### Esta es mi propuesta para el proyecto
-
 <p align="center">
 	<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/enidev911/python-console-tools?color=%23FF7034&logo=files&logoColor=%23FCCF5A&style=for-the-badge">
 	&nbsp;&nbsp;&nbsp;
