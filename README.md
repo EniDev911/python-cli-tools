@@ -1,5 +1,6 @@
-<<<<<<< HEAD
-=======
+### Este cambio lo envie vía SSH
+
+
 <p align="center">
 	<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/enidev911/python-console-tools?color=%23FF7034&logo=files&logoColor=%23FCCF5A&style=for-the-badge">
 	&nbsp;&nbsp;&nbsp;
@@ -7,7 +8,7 @@
 	&nbsp;&nbsp;&nbsp;
 	<img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/enidev911/python-console-tools?color=%23FF7034&logo=codereview&logoColor=%23FBE7B2&style=for-the-badge">
 </p>
->>>>>>> 9775402d2d9cfbf3bc0c05ece374df6c2f31d678
+
 
 <hr>
 
@@ -17,11 +18,10 @@
 
 <h2 align="center">Console-Tools</h2> 
 
-<<<<<<< HEAD
+
 <br>
-=======
+
 <h2 align="center">Tools-Python-Console</h2> 
->>>>>>> 9775402d2d9cfbf3bc0c05ece374df6c2f31d678
 
 
 ### File organizer
