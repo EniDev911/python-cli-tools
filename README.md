@@ -1,6 +1,5 @@
 <p align="center">
-	<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/enidev911/python-console-tools?color=%23FF7034&logo=files&logoColor=%23FCCF5A&style=for-the-badge">
-	&nbsp;&nbsp;&nbsp;
+	<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/enidev911/python-console-tools?color=%23FF7034&logo=files&logoColor=%23FCCF5A&style=for-the-badge" style="margin-left: 40px">
 	<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/enidev911/python-console-tools?color=%23FF7034&logo=python&logoColor=%23FF7034&style=for-the-badge">
 	&nbsp;&nbsp;&nbsp;
 	<img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/enidev911/python-console-tools?color=%23FF7034&logo=codereview&logoColor=%23FBE7B2&style=for-the-badge">
